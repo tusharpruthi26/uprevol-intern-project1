@@ -24,7 +24,7 @@ export default function Header() {
         <NavbarLink href="/services" active>
           Services
         </NavbarLink>
-        <Dropdown label="Products" style={{ border: "none" }}>
+        <Dropdown label="Products" href="/products" style={{ border: "none" }}>
           <DropdownItem href="#">Fire Extinguishers</DropdownItem>
           <DropdownItem href="#">Fire Hydrant Services</DropdownItem>
           <DropdownItem href="#">Sprinkler-System</DropdownItem>
@@ -33,7 +33,11 @@ export default function Header() {
           </DropdownItem>
           <DropdownItem href="#">Electrical Fire Safety Panels</DropdownItem>
         </Dropdown>
-        <Dropdown label="Products application" style={{ border: "none" }}>
+        <Dropdown
+          label="Products application"
+          href="/productsapplication"
+          style={{ border: "none" }}
+        >
           <DropdownItem href="#">Power Plants</DropdownItem>
           <DropdownItem href="#">Building & Construction</DropdownItem>
           <DropdownItem href="#">Restaurants & Server Room</DropdownItem>

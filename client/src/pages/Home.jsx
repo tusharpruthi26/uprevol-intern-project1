@@ -3,7 +3,7 @@ import React from "react";
 import image from "./images/homeimage.jpg";
 import { FaPhone } from "react-icons/fa";
 import { FaCar } from "react-icons/fa";
-import Card, { CardList } from "../Card";
+import { CardList } from "../Card";
 
 export default function Home() {
   return (
