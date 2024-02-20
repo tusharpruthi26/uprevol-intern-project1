@@ -1,6 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    company: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("http://localhost:3000/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        //Handle success, e.g., show a success message to the user
+        console.log("Form submitted successfully");
+      } else {
+        //Handle error, e.g., show an error message to the user
+        console.error("Form submission failed");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
   return (
     <div>
       <div className="bg-black text-white items-center">
@@ -34,7 +67,7 @@ export default function Contact() {
           </div>
 
           <div className="bg-black px-20 py-20">
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="py-2 text-sm">
                 <label htmlFor="name" className="text-gray-700">
                   Name
@@ -44,9 +77,10 @@ export default function Contact() {
                 <input
                   type="text"
                   name="name"
-                  className="bg-gray-100 text-sm px-1 py-1 w-64"
+                  className="bg-white text-black text-sm px-1 py-1 w-64"
                   placeholder="Full Name"
                   required
+                  onChange={handleChange}
                 />
               </div>
               <div className="py-2 text-sm">
@@ -59,45 +93,49 @@ export default function Contact() {
                   type="email"
                   name="email"
                   placeholder="Email Address"
-                  className="bg-gray-100 px-1 py-1 w-64"
+                  className="bg-white text-black px-1 py-1 w-64"
                   required
+                  onChange={handleChange}
                 />
                 <br />
               </div>
               <div className="py-2 text-sm">
-                <label htmlFor="companyName" className="text-gray-700">
+                <label htmlFor="company" className="text-gray-700">
                   Company
                 </label>
                 <span className="text-red-500">*</span>
                 <br />
                 <input
                   type="text"
-                  name="companyName"
-                  className="bg-gray-100 px-1 py-1 w-64"
+                  name="company"
+                  className="bg-white text-black px-1 py-1 w-64"
                   placeholder="Company Name"
                   required
+                  onChange={handleChange}
                 />
                 <br />
               </div>
               <div className="py-2 text-sm">
-                <label for="message" className="text-gray-700">
+                <label htmlFor="message" className="text-gray-700">
                   Message
                 </label>
                 <span className="text-red-500">*</span>
                 <br />
                 <textarea
-                  className="bg-gray-100 px-1 py-2 w-64"
+                  name="message"
+                  className="bg-white text-black px-1 py-2 w-64"
                   placeholder="Enter Message Here"
                   rows="2"
+                  onChange={handleChange}
                 ></textarea>
               </div>
               <div className="py-3">
-                <a
-                  href=""
+                <button
+                  type="submit"
                   className="text-red-500 border border-red-500 py-1 px-3 text-sm"
                 >
                   Send Me Quote
-                </a>
+                </button>
               </div>
             </form>
           </div>
@@ -142,7 +180,7 @@ export default function Contact() {
         </div>
       </div>
       {/* --------------- */}
-      <div className=" px-20 py-20 border">
+      {/* <div className=" px-20 py-20 border">
         <div className="">
           <iframe
             loading="lazy"
@@ -152,7 +190,7 @@ export default function Contact() {
             aria-label="Plot No. 1107, First Floor, Sector 47, Sohna Road, Near ILD Mall, Gurgaon"
           ></iframe>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
