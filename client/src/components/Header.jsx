@@ -12,10 +12,10 @@ import logo from "./logoo.png";
 
 export default function Header() {
   const products = [
-    { label: "Fire Extinguishers", href: "/Fireextinguishers" },
-    { label: "Fire Hydrant Services", href: "" },
-    { label: "Sprinkler-System", href: "" },
-    { label: "Industrial fire Safety Equuipments", href: "" },
+    { label: "Fire Extinguishers", href: "/productsitem1" },
+    { label: "Fire Hydrant Services", href: "#" },
+    { label: "Sprinkler-System", href: "#" },
+    { label: "Industrial fire Safety Equipments", href: "#" },
   ];
 
   const productsApplication = [
@@ -39,7 +39,7 @@ export default function Header() {
 
         {/* Dropdown */}
         <Dropdown title="products" items={products} />
-        <Dropdown title="products" items={productsApplication} />
+        <Dropdown title="products application" items={productsApplication} />
         <NavbarLink href="/about" active>
           About
         </NavbarLink>

@@ -12,7 +12,7 @@ const Dropdown = ({ title, items }) => {
     <div className="relative inline-block">
       <button
         onClick={toggleDropdown}
-        className="text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center"
+        className="text-white py-2 px-4 rounded inline-flex items-center"
       >
         {title}
         <svg
