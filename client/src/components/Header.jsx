@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Dropdown from "../Dropdown";
+import { Dropdown } from "flowbite-react";
 
 import {
   Navbar,
@@ -11,18 +11,6 @@ import {
 import logo from "./logoo.png";
 
 export default function Header() {
-  const products = [
-    { label: "Fire Extinguishers", href: "/productsitem1" },
-    { label: "Fire Hydrant Services", href: "#" },
-    { label: "Sprinkler-System", href: "#" },
-    { label: "Industrial fire Safety Equipments", href: "#" },
-  ];
-
-  const productsApplication = [
-    { label: "Application 1", href: "#" },
-    { label: "Application 2", href: "#" },
-    { label: "Application 3", href: "#" },
-  ];
   return (
     <Navbar className="bg-black h-28">
       <NavbarBrand>
@@ -36,10 +24,32 @@ export default function Header() {
         <NavbarLink href="/services" active>
           Services
         </NavbarLink>
-
         {/* Dropdown */}
-        <Dropdown title="products" items={products} />
-        <Dropdown title="products application" items={productsApplication} />
+        <div className="flex">
+          <Dropdown
+            label=<a href="/products">Products</a>
+            style={{ border: "none", marginRight: "10px" }}
+          >
+            <DropdownItem href="#">Fire Extinguishers</DropdownItem>
+            <DropdownItem href="#">Fire Hydrant Services</DropdownItem>
+            <DropdownItem href="#">Sprinkler-System</DropdownItem>
+            <DropdownItem href="#">
+              Industrial fire Safety Equipments
+            </DropdownItem>
+            <DropdownItem href="#">Electrical Fire Safety Panels</DropdownItem>
+          </Dropdown>
+          <Dropdown
+            label=<a href="/productsapplication">Products application</a>
+            style={{ border: "none" }}
+          >
+            <DropdownItem href="#">Power Plants</DropdownItem>
+            <DropdownItem href="#">Building & Construction</DropdownItem>
+            <DropdownItem href="#">Restaurants & Server Room</DropdownItem>
+            <DropdownItem href="#">Hangars, Dockyards & Airport</DropdownItem>
+            <DropdownItem href="#">Residential Areas</DropdownItem>
+            <DropdownItem href="#">Oil Refineries</DropdownItem>
+          </Dropdown>
+        </div>
         <NavbarLink href="/about" active>
           About
         </NavbarLink>

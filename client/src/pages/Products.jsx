@@ -9,17 +9,17 @@ export default function Products() {
         <div className="relative">
           <img
             className="w-full h-96"
-            src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/04/R-11.jpg"
+            src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
             alt="Product"
           />
           <div className="absolute top-1/2 left-1/2 text-center transform -translate-x-1/2 -translate-y-1/3">
-            <h1 className="text-7xl font-bold text-white">Product</h1>
+            <h1 className="text-7xl font-bold text-black">Product</h1>
             <br />
             <br />
 
             <Link
               to="/"
-              className="inline-block  text-white border border-red-600 border-2  hover:bg-red-600 px-7 py-2 "
+              className="inline-block  text-black border border-red-600 border-2  hover:bg-red-600 px-7 py-2 "
             >
               Back to Home
             </Link>
@@ -84,7 +84,7 @@ export default function Products() {
         <div className="flex md:flex-row items-center p-24">
           <div>
             <img
-              src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/03/OIP-5-1.jpg"
+              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
               alt="fire Brigade"
               className="rounded-3xl mr-44"
             />
@@ -120,9 +120,9 @@ export default function Products() {
           </div>
           <div>
             <img
-              src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/03/OIP-8-1.jpg"
+              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
               alt="fire Brigade"
-              className="rounded-3xl ml-24  "
+              className="rounded-3xl ml-24 h-80 "
             />
           </div>
         </div>
@@ -131,9 +131,9 @@ export default function Products() {
         <div className="flex flex-col md:flex-row items-center px-44 py-24">
           <div>
             <img
-              src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/04/R-11.jpg"
+              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
               alt="fire Brigade"
-              className="rounded-3xl "
+              className="rounded-3xl h-80 "
             />
           </div>
           <div className="max-w-lg ml-14">
@@ -167,9 +167,9 @@ export default function Products() {
           </div>
           <div>
             <img
-              src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/03/OIP-10-1.jpg"
+              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
               alt="fire Brigade"
-              className="rounded-3xl ml-20  w-full "
+              className="rounded-3xl ml-20  h-80     "
             />
           </div>
         </div>
@@ -178,9 +178,9 @@ export default function Products() {
         <div className="flex flex-col md:flex-row items-center px-44 py-24">
           <div>
             <img
-              src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/03/OIP-9-1.jpg"
+              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
               alt="fire Brigade"
-              className="rounded-3xl mr-44 h-64 w-96"
+              className="rounded-3xl mr-44 w-96 h-80 "
             />
           </div>
           <div className="max-w-lg ">

@@ -29,7 +29,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="text-justify">
-            <h1>Services</h1>
+            <a href="/services">Services</a>
             <div className="py-4 text-justify">
               <h2>FIRE BRIGADE</h2>
               <h2>MANPOWER SUPPLIER</h2>
@@ -41,8 +41,9 @@ export default function Footer() {
           <div className="text-justify">
             <h1>Company</h1>
             <div className="py-4 text-justify">
-              <h2>About Us</h2>
-              <h2>Contact Us</h2>
+              <a href="/about">About us</a>
+              <br />
+              <a href="/contact">Contact us</a>
             </div>
           </div>
           <div className="w-1/4 text-justify">

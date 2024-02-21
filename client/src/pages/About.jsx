@@ -7,7 +7,7 @@ export default function About() {
         <div className="relative">
           <img
             className="w-full h-80"
-            src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/04/fire-safety-1.webp"
+            src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
             alt="services"
           />
           <div className="absolute top-1/2 left-1/2 text-center transform -translate-x-1/2 -translate-y-1/3">
@@ -78,7 +78,7 @@ export default function About() {
                   <div className="px-20">
                     <img
                       className="h-20 border bg-white px-1 py-1"
-                      src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/04/OIP-25.jpg"
+                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
                     ></img>
                     <h1 className="font-bold">Expertise</h1>
                   </div>
@@ -97,7 +97,7 @@ export default function About() {
                   <div className="px-20">
                     <img
                       className="h-20 border bg-white px-1 py-1 "
-                      src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/04/OIP-26.jpg"
+                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
                     ></img>
                     <h1 className="font-bold">Customization</h1>
                   </div>
@@ -116,7 +116,7 @@ export default function About() {
                     {" "}
                     <img
                       className="h-20 border bg-white px-1 py-1"
-                      src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/04/OIP-27.jpg"
+                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
                     ></img>
                     <h1 className="font-bold">Quality</h1>
                   </div>
@@ -135,7 +135,7 @@ export default function About() {
                     {" "}
                     <img
                       className="h-20 border bg-white px-1 py-1"
-                      src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/04/flexibi.jpeg"
+                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
                     ></img>
                     <h1 className="font-bold">Flexibility</h1>
                   </div>
@@ -272,7 +272,7 @@ export default function About() {
                   <a href="/about">
                     <img
                       className="max-w-xl rounded-3xl "
-                      src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/04/fire-safety-1.webp"
+                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
                     ></img>
                   </a>
                 </div>
@@ -290,7 +290,7 @@ export default function About() {
                   <a href="/about">
                     <img
                       className="max-w-xl rounded-3xl "
-                      src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/04/safety-services.jpg"
+                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
                     ></img>
                   </a>
                 </div>
@@ -324,7 +324,7 @@ export default function About() {
           <h1>OUR ASSOCIATE BRANDS</h1>
         </div>
         <div className="flex justify-center py-10">
-          <img src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/03/Screenshot-2023-03-30-025536-1536x250.jpg" />
+          <img src="https://imgs.search.brave.com/8PdwdGM0gCHKrjpxWOpxPwj5AbGabdKHbuKgJNmKSSg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTAy/NTQzMzA1Mi9waG90/by9icmFuZHMuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVdl/SV9KZWx3ZnZaUDNT/NGdESHYtWFpuQ0dh/SXU5QmlsMF90aU9f/TnNCbms9" />
         </div>
       </div>
     </div>

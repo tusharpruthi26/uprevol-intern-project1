@@ -7,6 +7,7 @@ export default function Contact() {
     company: "",
     message: "",
   });
+  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,10 +25,19 @@ export default function Contact() {
         body: JSON.stringify(formData),
       });
       if (response.ok) {
-        //Handle success, e.g., show a success message to the user
-        console.log("Form submitted successfully");
+        // Handle success
+        console.log("Quote submitted successfully");
+        // Clear form data
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          message: "",
+        });
+        // Show confirmation message
+        setSubmitted(true);
       } else {
-        //Handle error, e.g., show an error message to the user
+        // Handle error
         console.error("Form submission failed");
       }
     } catch (error) {
@@ -77,6 +87,7 @@ export default function Contact() {
                 <input
                   type="text"
                   name="name"
+                  value={formData.name}
                   className="bg-white text-black text-sm px-1 py-1 w-64"
                   placeholder="Full Name"
                   required
@@ -92,6 +103,7 @@ export default function Contact() {
                 <input
                   type="email"
                   name="email"
+                  value={formData.email}
                   placeholder="Email Address"
                   className="bg-white text-black px-1 py-1 w-64"
                   required
@@ -108,6 +120,7 @@ export default function Contact() {
                 <input
                   type="text"
                   name="company"
+                  value={formData.company}
                   className="bg-white text-black px-1 py-1 w-64"
                   placeholder="Company Name"
                   required
@@ -123,6 +136,7 @@ export default function Contact() {
                 <br />
                 <textarea
                   name="message"
+                  value={formData.message}
                   className="bg-white text-black px-1 py-2 w-64"
                   placeholder="Enter Message Here"
                   rows="2"
@@ -138,6 +152,7 @@ export default function Contact() {
                 </button>
               </div>
             </form>
+            {submitted && <p>Quote submitted successfully!</p>}
           </div>
         </div>
       </div>

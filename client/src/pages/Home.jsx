@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import image from "./images/homeimage.jpg";
 import { FaPhone } from "react-icons/fa";
@@ -6,6 +6,60 @@ import { FaCar } from "react-icons/fa";
 import { CardList } from "../Card";
 
 export default function Home() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    company: "",
+    message: "",
+  });
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("http://localhost:3000/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        // Handle success
+        console.log("Quote submitted successfully");
+        // Clear form data
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          message: "",
+        });
+        // Show confirmation message
+        setSubmitted(true);
+      } else {
+        // Handle error
+        console.error("Form submission failed");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
+  //       //Handle success, e.g., show a success message to the user
+  //       console.log("Form submitted successfully");
+  //     } else {
+  //       //Handle error, e.g., show an error message to the user
+  //       console.error("Form submission failed");
+  //     }
+  //   } catch (error) {
+  //     console.error("Error submitting form:", error);
+  //   }
+  // };
+
   return (
     <div>
       <section>
@@ -346,7 +400,7 @@ export default function Home() {
                 <div className="grid grid-cols-2">
                   <div className="w-80">
                     <img
-                      src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/04/chicago-fire-dept-icon-logo-D0FB3C9AEE-seeklogo.com-removebg-preview.png"
+                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
                       className="w-20 h-20"
                     ></img>
                     <div className="text-sm font-bold text-justify">
@@ -367,7 +421,7 @@ export default function Home() {
                   </div>
                   <div className="w-80">
                     <img
-                      src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/04/images-removebg-preview.png"
+                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
                       className="w-20 h-20"
                     ></img>
                     <div className="text-sm font-bold text-justify justify-start">
@@ -388,7 +442,7 @@ export default function Home() {
                   </div>
                   <div className="w-80">
                     <img
-                      src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/04/4c2a11512a9edef85f926198aa7ba215-removebg-preview.png"
+                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
                       className="w-20 h-20"
                     ></img>
                     <div className="text-sm font-bold text-justify justify-start">
@@ -408,7 +462,7 @@ export default function Home() {
                   </div>
                   <div className="w-80">
                     <img
-                      src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/04/images__2_-removebg-preview.png"
+                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
                       className="w-20 h-20"
                     ></img>
                     <div className="text-sm font-bold text-justify justify-start">
@@ -428,7 +482,7 @@ export default function Home() {
                   </div>
                   <div className="w-80">
                     <img
-                      src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/04/Untitled.png"
+                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
                       className="w-20 h-20"
                     ></img>
                     <div className="text-sm font-bold text-justify justify-start">
@@ -448,7 +502,7 @@ export default function Home() {
                   </div>
                   <div className="w-80">
                     <img
-                      src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/04/Untitled.png"
+                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
                       className="w-20 h-20"
                     ></img>
                     <div className="text-sm font-bold text-justify justify-start">
@@ -507,7 +561,83 @@ export default function Home() {
               </div>
 
               <div className="bg-white px-20 py-20">
-                <form>
+                <form onSubmit={handleSubmit}>
+                  <div className="py-2 text-sm">
+                    <label htmlFor="name" className="text-gray-700">
+                      Name
+                    </label>
+                    <span className="text-red-500">*</span>
+                    <br />
+                    <input
+                      type="text"
+                      name="name"
+                      value={formData.name}
+                      className="bg-white text-black text-sm px-1 py-1 w-64"
+                      placeholder="Full Name"
+                      required
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div className="py-2 text-sm">
+                    <label htmlFor="email" className="text-gray-700">
+                      Email
+                    </label>
+                    <span className="text-red-500">*</span>
+                    <br />
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      placeholder="Email Address"
+                      className="bg-white text-black px-1 py-1 w-64"
+                      required
+                      onChange={handleChange}
+                    />
+                    <br />
+                  </div>
+                  <div className="py-2 text-sm">
+                    <label htmlFor="company" className="text-gray-700">
+                      Company
+                    </label>
+                    <span className="text-red-500">*</span>
+                    <br />
+                    <input
+                      type="text"
+                      name="company"
+                      value={formData.company}
+                      className="bg-white text-black px-1 py-1 w-64"
+                      placeholder="Company Name"
+                      required
+                      onChange={handleChange}
+                    />
+                    <br />
+                  </div>
+                  <div className="py-2 text-sm">
+                    <label htmlFor="message" className="text-gray-700">
+                      Message
+                    </label>
+                    <span className="text-red-500">*</span>
+                    <br />
+                    <textarea
+                      name="message"
+                      value={formData.message}
+                      className="bg-white text-black px-1 py-2 w-64"
+                      placeholder="Enter Message Here"
+                      rows="2"
+                      onChange={handleChange}
+                    ></textarea>
+                  </div>
+                  <div className="py-3">
+                    <button
+                      type="submit"
+                      className="text-red-500 border border-red-500 py-1 px-3 text-sm"
+                    >
+                      Send Me Quote
+                    </button>
+                  </div>
+                </form>
+                {submitted && <p>Quote submitted successfully!</p>}
+                {/* <form>
                   <div className="py-2 text-sm">
                     <label htmlFor="name" className="text-gray-700">
                       Name
@@ -565,14 +695,14 @@ export default function Home() {
                     ></textarea>
                   </div>
                   <div className="py-3">
-                    <a
-                      href=""
+                    <button
+                      type="submit"
                       className="text-red-500 border border-red-500 py-1 px-3 text-sm"
                     >
                       Send Me Quote
-                    </a>
+                    </button>
                   </div>
-                </form>
+                </form> */}
               </div>
             </div>
           </div>

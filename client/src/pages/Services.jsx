@@ -78,9 +78,9 @@ export default function Services() {
         <div className="flex flex-col md:flex-row items-center px-44 py-24">
           <div>
             <img
-              src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/03/OIP-6-2.jpg"
+              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
               alt="fire Brigade"
-              className="rounded-xl mr-44"
+              className="rounded-xl h-72 mr-10"
             />
           </div>
           <div className="max-w-lg ">
@@ -120,9 +120,9 @@ export default function Services() {
           </div>
           <div>
             <img
-              src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/04/fire_safety_1.jpg"
+              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
               alt="fire Brigade"
-              className="rounded-xl ml-20 h-48 "
+              className="rounded-xl ml-20 h-72 "
             />
           </div>
         </div>
@@ -131,7 +131,7 @@ export default function Services() {
         <div className="flex flex-col md:flex-row items-center px-44 py-24">
           <div>
             <img
-              src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/03/OIP-8-2.jpg"
+              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
               alt="fire Brigade"
               className="rounded-xl mr-44 h-56 w-96"
             />
@@ -170,7 +170,7 @@ export default function Services() {
           </div>
           <div>
             <img
-              src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/04/R-12-2048x1365.jpg"
+              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
               alt="fire Brigade"
               className="rounded-xl ml-20 h-64 w-full "
             />
@@ -181,9 +181,9 @@ export default function Services() {
         <div className="flex flex-col md:flex-row items-center px-44 py-24">
           <div>
             <img
-              src="https://www.monolithsafetyexperts.com/wp-content/uploads/2023/03/fire-safety-awareness-1-1.png"
+              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
               alt="fire Brigade"
-              className="rounded-xl mr-44 h-60 w-96"
+              className="rounded-xl h-72 mr-10"
             />
           </div>
           <div className="max-w-lg ">
