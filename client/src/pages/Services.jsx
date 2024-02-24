@@ -8,7 +8,7 @@ export default function Services() {
       <section>
         <div className="relative">
           <img
-            className="w-full h-96"
+            className="w-full h-96 shadow-2xl"
             src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
             alt="services"
           />
@@ -19,7 +19,7 @@ export default function Services() {
 
             <Link
               to="/"
-              className="inline-block  text-white border border-red-600 border-2 hover:border-white hover:bg-red-600 px-7 py-2 "
+              className="inline-block  text-white border border-red-600 border-2  hover:bg-red-600 px-7 py-2 "
             >
               Back to Home
             </Link>
@@ -27,10 +27,10 @@ export default function Services() {
         </div>
       </section>
       <section>
-        <div className="flex py-20 px-10 ">
+        <div className="flex py-36 px-10 space-x-4 ">
           {/* Card 1 */}
 
-          <div className="max-w-md">
+          <div className="max-w-md shadow-xl rounded-2xl hover:bg-gray-200">
             <div className="px-6 py-4">
               <FaCar className="text-red-600 text-3xl" />
               <div className="font-bold text-2xl mb-2">
@@ -44,7 +44,7 @@ export default function Services() {
             </div>
           </div>
           {/* Card 2 */}
-          <div className="max-w-md">
+          <div className="max-w-md shadow-xl rounded-2xl hover:bg-gray-200">
             <div className="px-6 py-4">
               <FaCar className="text-red-600 text-3xl" />
               <div className="font-bold text-2xl mb-2">
@@ -58,7 +58,7 @@ export default function Services() {
             </div>
           </div>
           {/* Card 3 */}
-          <div className="max-w-md">
+          <div className="max-w-md shadow-xl rounded-2xl hover:bg-gray-200">
             <div className="px-6 py-4">
               <FaCar className="text-red-600 text-3xl" />
               <div className="font-bold text-2xl mb-2">
@@ -80,7 +80,7 @@ export default function Services() {
             <img
               src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
               alt="fire Brigade"
-              className="rounded-xl h-72 mr-10"
+              className="rounded-xl h-72 mr-10 shadow-2xl"
             />
           </div>
           <div className="max-w-lg ">
@@ -122,7 +122,7 @@ export default function Services() {
             <img
               src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
               alt="fire Brigade"
-              className="rounded-xl ml-20 h-72 "
+              className="rounded-xl ml-20 h-72 shadow-2xl "
             />
           </div>
         </div>
@@ -133,7 +133,7 @@ export default function Services() {
             <img
               src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
               alt="fire Brigade"
-              className="rounded-xl mr-44 h-56 w-96"
+              className="rounded-xl mr-44 h-56 w-96 shadow-2xl"
             />
           </div>
           <div className="max-w-lg ">
@@ -172,7 +172,7 @@ export default function Services() {
             <img
               src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
               alt="fire Brigade"
-              className="rounded-xl ml-20 h-64 w-full "
+              className="rounded-xl ml-20 h-64 w-full shadow-2xl"
             />
           </div>
         </div>
@@ -183,7 +183,7 @@ export default function Services() {
             <img
               src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
               alt="fire Brigade"
-              className="rounded-xl h-72 mr-10"
+              className="rounded-xl h-72 mr-10 shadow-2xl"
             />
           </div>
           <div className="max-w-lg ">
@@ -208,7 +208,7 @@ export default function Services() {
       <div className="text-center pb-14">
         <Link
           to="/contact"
-          className="text-red-600 border border-red-600 border-2  hover:bg-red-600 hover:text-white px-7 py-2 "
+          className="text-red-600 border border-red-600 border-2  hover:bg-red-600 hover:text-white px-7 py-2 shadow-xl "
         >
           QUOTE NOW
         </Link>
@@ -218,7 +218,7 @@ export default function Services() {
           <img
             src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
             alt="Fire Security Training"
-            className="w-full h-96 opacity-80"
+            className="w-full h-96 opacity-80 shadow-2xl"
           />
           <div className="absolute top-1/2 left-1/2 text-center transform -translate-x-1/2 -translate-y-1/3 ">
             <p className="text-black font-semibold">JOIN US</p>
@@ -247,7 +247,7 @@ export default function Services() {
       <section className="flex flex-wrap justify-center py-32">
         {/* Card 1 */}
 
-        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center">
+        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center shadow-xl">
           <div className="px-6 py-4">
             <FaCar className="text-red-600 text-6xl mt-8 ml-32" />
             <div className="font-bold text-xl mb-4">Identify Fire Hazards</div>
@@ -259,7 +259,7 @@ export default function Services() {
         </div>
 
         {/* Card 2 */}
-        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center">
+        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center shadow-xl">
           <div className="px-6 py-4">
             <FaCar className="text-red-600 text-6xl mt-8 ml-32" />
             <div className="font-bold text-xl mb-4">
@@ -273,7 +273,7 @@ export default function Services() {
         </div>
 
         {/* Card 3 */}
-        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center">
+        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center shadow-xl">
           <div className="px-6 py-4">
             <FaCar className="text-red-600 text-6xl mt-8 ml-32" />
             <div className="font-bold text-xl mb-4">Train Employees</div>
@@ -285,7 +285,7 @@ export default function Services() {
         </div>
 
         {/* Card 4 */}
-        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center">
+        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center shadow-xl">
           <div className="px-6 py-4">
             <FaCar className="text-red-600 text-6xl mt-8 ml-32" />
             <div className="font-bold text-xl mb-4">
@@ -299,7 +299,7 @@ export default function Services() {
         </div>
 
         {/* Card 5 */}
-        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center">
+        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center shadow-xl">
           <div className="px-6 py-4">
             <FaCar className="text-red-600 text-6xl mt-8 ml-32" />
             <div className="font-bold text-xl mb-4">
@@ -313,7 +313,7 @@ export default function Services() {
         </div>
 
         {/* Card 6 */}
-        <div className="w-96  bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center">
+        <div className="w-96  bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center shadow-xl">
           <div className="px-6 py-4 ">
             <FaCar className="text-red-600 text-6xl mt-8 ml-32" />
 

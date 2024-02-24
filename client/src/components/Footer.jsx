@@ -1,6 +1,6 @@
 import React from "react";
 
-import companyLogo from "../components/logoo.png";
+import companyLogo from "../components/logo.png";
 export default function Footer() {
   return (
     <div className="bg-black text-white ">

@@ -8,16 +8,22 @@ import {
   DropdownItem,
   NavbarToggle,
 } from "flowbite-react";
-import logo from "./logoo.png";
+import logo from "./logo.png";
 
 export default function Header() {
   return (
-    <Navbar className="bg-black h-28">
-      <NavbarBrand>
-        <img src={logo} className="h-20 pl-4 pt-2" alt="Flowbite React Logo" />
-      </NavbarBrand>
+    <Navbar className="bg-black h-36 flex justify-between items-center">
+      <div className="flex items-center">
+        <NavbarBrand>
+          <img
+            src={logo}
+            className="h-36 w-64 pl-2 pt-2"
+            alt="Flowbite React Logo"
+          />
+        </NavbarBrand>
+      </div>
 
-      <div className="h-20 flex space-x-8">
+      <div className="flex justify-end space-x-8">
         <NavbarLink href="/" active>
           Home
         </NavbarLink>
@@ -25,29 +31,41 @@ export default function Header() {
           Services
         </NavbarLink>
         {/* Dropdown */}
-        <div className="flex">
+        <div className="flex pt-5">
           <Dropdown
             label=<a href="/products">Products</a>
             style={{ border: "none", marginRight: "10px" }}
           >
-            <DropdownItem href="#">Fire Extinguishers</DropdownItem>
-            <DropdownItem href="#">Fire Hydrant Services</DropdownItem>
-            <DropdownItem href="#">Sprinkler-System</DropdownItem>
-            <DropdownItem href="#">
+            {/* Dropdown items */}
+            <DropdownItem href="/FireExtinguishers">
+              Fire Extinguishers
+            </DropdownItem>
+            <DropdownItem href="/FireHydrant">
+              Fire Hydrant Services
+            </DropdownItem>
+            <DropdownItem href="/SprinklerSystem">
+              Sprinkler-System
+            </DropdownItem>
+            <DropdownItem href="/IndustrialFireSafety">
               Industrial fire Safety Equipments
             </DropdownItem>
-            <DropdownItem href="#">Electrical Fire Safety Panels</DropdownItem>
+            <DropdownItem href="/ElectricalFireSafety">
+              Electrical Fire Safety Panels
+            </DropdownItem>
           </Dropdown>
           <Dropdown
             label=<a href="/productsapplication">Products application</a>
             style={{ border: "none" }}
           >
-            <DropdownItem href="#">Power Plants</DropdownItem>
-            <DropdownItem href="#">Building & Construction</DropdownItem>
-            <DropdownItem href="#">Restaurants & Server Room</DropdownItem>
-            <DropdownItem href="#">Hangars, Dockyards & Airport</DropdownItem>
-            <DropdownItem href="#">Residential Areas</DropdownItem>
-            <DropdownItem href="#">Oil Refineries</DropdownItem>
+            {/* Dropdown items */}
+            <DropdownItem href="/app1">Power Plants</DropdownItem>
+            <DropdownItem href="/app2">Building & Construction</DropdownItem>
+            <DropdownItem href="/app3">Restaurants & Server Room</DropdownItem>
+            <DropdownItem href="/app4">
+              Hangars, Dockyards & Airport
+            </DropdownItem>
+            <DropdownItem href="/app5">Residential Areas</DropdownItem>
+            <DropdownItem href="/app6">Oil Refineries</DropdownItem>
           </Dropdown>
         </div>
         <NavbarLink href="/about" active>

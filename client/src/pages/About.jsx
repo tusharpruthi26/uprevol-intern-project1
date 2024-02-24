@@ -1,22 +1,34 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export default function About() {
   return (
     <div>
       <section>
         <div className="relative">
           <img
-            className="w-full h-80"
+            className="w-full h-80 shadow-2xl"
             src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
             alt="services"
           />
           <div className="absolute top-1/2 left-1/2 text-center transform -translate-x-1/2 -translate-y-1/3">
             <h1 className="text-7xl font-bold">ABOUT US</h1>
+            <br />
+            <br />
+            <Link
+              to="/contact"
+              className="inline-block  text-white border border-red-600 border-2 hover:border-white hover:bg-red-600 px-7 py-2 "
+            >
+              Back to Home
+            </Link>
           </div>
         </div>
       </section>
+      <br />
+      <br />
+      <br />
+      <br />
       <section>
-        <div className=" px-20 py-20 bg-gray-200">
+        <div className=" px-40 py-44 bg-gray-200 shadow-2xl rounded-3xl mx-9">
           <div className="container text-center">
             <div className=" flex justify-around">
               <div className=" text-justify  w-1/3">
@@ -68,12 +80,17 @@ export default function About() {
           </div>
         </div>
       </section>
+      <br />
+      <br />
+      <br />
       <section>
         <div className="py-20 px-40 ">
           <h1 className="text-4xl text-center font-bold"> Why Monolith?</h1>
+          <br />
+          <br />
           <div className="container  py-10">
             <div className="space-x-5  flex justify-around ">
-              <div className=" border bg-gray-300 hover:bg-red-500  px-10 rounded-lg">
+              <div className=" border bg-gray-300 hover:bg-red-500  px-10 rounded-2xl shadow-2xl">
                 <div className="py-5">
                   <div className="px-20">
                     <img
@@ -92,7 +109,7 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="border  bg-gray-300 hover:bg-red-500  px-10 rounded-lg">
+              <div className="border  bg-gray-300 hover:bg-red-500  px-10 rounded-2xl shadow-2xl">
                 <div className="py-5 ">
                   <div className="px-20">
                     <img
@@ -110,7 +127,7 @@ export default function About() {
                   </div>
                 </div>
               </div>
-              <div className="border bg-gray-300   hover:bg-red-500  px-10 rounded-lg">
+              <div className="border bg-gray-300   hover:bg-red-500  px-10 rounded-2xl shadow-2xl">
                 <div className="py-5">
                   <div className="px-20">
                     {" "}
@@ -129,7 +146,7 @@ export default function About() {
                   </div>
                 </div>
               </div>
-              <div className="border bg-gray-300   hover:bg-red-500  px-10 rounded-lg">
+              <div className="border bg-gray-300   hover:bg-red-500  px-10 rounded-2xl shadow-2xl">
                 <div className="py-5">
                   <div className="px-20">
                     {" "}
@@ -151,9 +168,12 @@ export default function About() {
             </div>
           </div>
         </div>
+        <br />
+        <br />
+        <br />
       </section>
       <section>
-        <div className="px-20 py-10 ">
+        <div className="px-20 py-20 rounded-3xl shadow-2xl bg-gray-200 mx-10 my-10">
           <div className="container text-center relative">
             <div className="flex ">
               <div className=" bg-red-600  px-10">
@@ -271,7 +291,7 @@ export default function About() {
                 <div className="">
                   <a href="/about">
                     <img
-                      className="max-w-xl rounded-3xl "
+                      className="max-w-xl rounded-3xl shadow-2xl"
                       src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
                     ></img>
                   </a>
@@ -289,7 +309,7 @@ export default function About() {
                 <div className="">
                   <a href="/about">
                     <img
-                      className="max-w-xl rounded-3xl "
+                      className="max-w-xl rounded-3xl shadow-2xl"
                       src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
                     ></img>
                   </a>
@@ -323,8 +343,11 @@ export default function About() {
         <div className=" flex justify-center text-2xl font-bold">
           <h1>OUR ASSOCIATE BRANDS</h1>
         </div>
-        <div className="flex justify-center py-10">
-          <img src="https://imgs.search.brave.com/8PdwdGM0gCHKrjpxWOpxPwj5AbGabdKHbuKgJNmKSSg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTAy/NTQzMzA1Mi9waG90/by9icmFuZHMuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVdl/SV9KZWx3ZnZaUDNT/NGdESHYtWFpuQ0dh/SXU5QmlsMF90aU9f/TnNCbms9" />
+        <div className="flex justify-center py-10 ">
+          <img
+            src="https://imgs.search.brave.com/8PdwdGM0gCHKrjpxWOpxPwj5AbGabdKHbuKgJNmKSSg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTAy/NTQzMzA1Mi9waG90/by9icmFuZHMuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVdl/SV9KZWx3ZnZaUDNT/NGdESHYtWFpuQ0dh/SXU5QmlsMF90aU9f/TnNCbms9"
+            className="shadow-2xl"
+          />
         </div>
       </div>
     </div>

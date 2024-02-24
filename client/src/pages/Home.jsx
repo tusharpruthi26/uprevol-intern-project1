@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import image from "./images/homeimage.jpg";
 import { FaPhone } from "react-icons/fa";
 import { FaCar } from "react-icons/fa";
-import { CardList } from "../Card";
+import Card, { CardList } from "../Card";
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -64,9 +64,13 @@ export default function Home() {
     <div>
       <section>
         <div>
-          <img src={image} alt="fire brigade image" className="h-100" />
+          <img
+            src={image}
+            alt="fire brigade image"
+            className="h-100 shadow-2xl"
+          />
 
-          <div className="absolute top-1/2 left-1/2 ">
+          <div className=" md:absolute top-1/2 left-1/2 ">
             <p className=" text-white font-bold text-lg ">
               RELIABLE AND TRUSTWORTHY PROVIDER OF TAILOR- <br />
               MADE SERVICES
@@ -74,7 +78,7 @@ export default function Home() {
 
             <br />
 
-            <h1 className="text-white  text-7xl">
+            <h1 className="text-white font-bold text-7xl">
               Best Safety <br />
               Services
             </h1>
@@ -97,7 +101,72 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="">
+        <div className="container mx-auto flex flex-col items-center py-10 md:flex-row py-20">
+          <div className="w-full md:w-2/3 flex items-center justify-center">
+            <div className="w-full md:w-1/2 space-y-2">
+              <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left">
+                Equip yourself for safety emergencies: The latest and most
+                reliable safety equipments
+              </h1>
+              <p className="text-center md:text-left">
+                This helps to emphasize the importance of having the right
+                safety equipment to protect yourself and your property from fire
+                emergencies. It suggests that the equipment being offered is the
+                latest and most reliable, which can give potential customers
+                confidence in their purchase. The use of the phrase “equip
+                yourself” also highlights the proactive approach to fire safety,
+                encouraging individuals and businesses to take action before an
+                emergency occurs.
+              </p>
+              <br />
+              <br />
+              <a
+                href="/about"
+                className="text-orange-500 text-center md:text-left"
+              >
+                About us <i className="fa-solid fa-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-red-600 text-white items-center p-5 md:p-20 w-full md:w-1/2 mt-10 md:mt-0">
+            <h1 className="py-5 text-center md:text-left">
+              Let's Talk our Expertise
+            </h1>
+            <div className="flex justify-between">
+              <div>
+                <h1 className="text-4xl md:text-5xl">
+                  5+<i className="fa-solid fa-plus"></i>
+                </h1>
+                <h1>Years In Business</h1>
+              </div>
+              <div>
+                <h1 className="text-4xl md:text-5xl">
+                  500+<i className="fa-solid fa-plus"></i>
+                </h1>
+                <h1>Happy Customers</h1>
+              </div>
+            </div>
+            <br />
+            <div className="flex justify-between">
+              <div>
+                <h1 className="text-4xl md:text-5xl">
+                  5<i className="fa-solid fa-plus"></i>
+                </h1>
+                <h1>Licensed Officer</h1>
+              </div>
+              <div>
+                <h1 className="text-4xl md:text-5xl">
+                  200+<i className="fa-solid fa-plus"></i>
+                </h1>
+                <h1>Assets Protected</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <section className="">
         <div className="container flex items-center py-20">
           <div className=" w-full flex items-center justify-center">
             <div className=" w-1/2 space-y-2 ms-20">
@@ -164,10 +233,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section>
-        <CardList />
+        <div className="container mx-auto px-4">
+          <div className="">
+            <CardList />
+          </div>
+        </div>
       </section>
 
       {/* <div className="flex bg-gray-100 px-18 py-20">
@@ -371,14 +444,14 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="px-10 py-20 border bg-gray-200 ">
+      <div className="px-10 py-32 bg-gray-200 ">
         <div className="container text-center ">
           <div className="justify-around flex">
             <div className=" px-10  py-10 w-1/3">
               <h2 className="text-4xl text-justify text-black font-bold leading-7">
                 Top-rated Services For Our Safety Equipments
               </h2>
-              <p className="py-10 text-justify text-md">
+              <p className="py-10 text-justify text-lg">
                 Safety equipment services are designed to help businesses and
                 organizations maintain safe working environments. These services
                 typically include the installation, maintenance, and repair of
@@ -387,20 +460,20 @@ export default function Home() {
               </p>
               <div className="py-5 text-left text-sm">
                 <a
-                  href=""
-                  className="border border-orange-500 px-1 py-1 text-orange-500 hover:bg-orange-500"
+                  href="/services"
+                  className="border border-orange-500 px-1 py-1 text-orange-500 hover:bg-orange-500 hover:text-white"
                 >
                   Check All Services
                   <i className="fa-solid fa-chevron-right px-1"></i>
                 </a>
               </div>
             </div>
-            <div className="w-1/2">
-              <div className="container text-center">
-                <div className="grid grid-cols-2">
-                  <div className="w-80">
+            <div className="py-10 ">
+              <div className="container text-center ">
+                <div className="grid grid-cols-2 ">
+                  <div className="w-80 mr-4 shadow-2xl bg-gray-300 hover:bg-gray-400 rounded-2xl">
                     <img
-                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
+                      src="https://imgs.search.brave.com/RalHD8cB_iWHFxbNWoWeR0FVFgmnSlr0yVp9ya92bRs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTc2/ODc1NDQ2L3Bob3Rv/L21lbGJvdXJuZS1m/aXJlLWJyaWdhZGUu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PS0wRlV1Y09wNEky/Z0JBR2RzLV95Sm9F/bzlLQzlhYldXa25t/ZFJrZmNVa3c9"
                       className="w-20 h-20"
                     ></img>
                     <div className="text-sm font-bold text-justify">
@@ -419,9 +492,9 @@ export default function Home() {
                       </a>
                     </div>
                   </div>
-                  <div className="w-80">
+                  <div className="w-80 ml-4 shadow-2xl bg-gray-300 hover:bg-gray-400 rounded-2xl">
                     <img
-                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
+                      src="https://imgs.search.brave.com/1Qgb-q8swaYo_Cm-7BmUAfXEYL1z6xpgrZN7PwjV-p0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9idWls/ZGVleS5jb20vdXBs/b2Fkcy9nYWxsZXJ5/L3VuaXR5LWZpcmUt/YW5kLXNhZmV0eS1z/ZXJ2aWNlcy1sbGMv/ZmlyZS1maWdodC53/ZWJw"
                       className="w-20 h-20"
                     ></img>
                     <div className="text-sm font-bold text-justify justify-start">
@@ -440,7 +513,7 @@ export default function Home() {
                       </a>
                     </div>
                   </div>
-                  <div className="w-80">
+                  <div className="w-80 mt-8 shadow-2xl bg-gray-300 hover:bg-gray-400 rounded-2xl">
                     <img
                       src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
                       className="w-20 h-20"
@@ -460,9 +533,9 @@ export default function Home() {
                       </a>
                     </div>
                   </div>
-                  <div className="w-80">
+                  <div className="w-80 mt-8 ml-4 shadow-2xl bg-gray-300 hover:bg-gray-400 rounded-2xl">
                     <img
-                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
+                      src="https://imgs.search.brave.com/D4cXgQzmomr6qvdTbbRbB4ZkWGjrMBIoVicoEPrZdfk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/dmZzZmlyZS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjEv/MDYvaVN0b2NrLTEx/ODY3MDA4ODYtMTgw/eDE4MC5qcGc"
                       className="w-20 h-20"
                     ></img>
                     <div className="text-sm font-bold text-justify justify-start">
@@ -480,7 +553,27 @@ export default function Home() {
                       </a>
                     </div>
                   </div>
-                  <div className="w-80">
+                  {/* <div className="w-80  border border-gray-700 border-2">
+                    <img
+                      src="https://imgs.search.brave.com/wbRIUGMlAtqnBgTLMy8vkENj1ji8GWfp2tEmUzhfeMA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/dHJhdmVsZXJzLmNv/bS9pdy1pbWFnZXMv/cmVzb3VyY2VzL0J1/c2luZXNzL1NtYWxs/L2J1c2luZXNzLWlu/ZHVzdHJpZXMvY29u/c3RydWN0aW9uL2Nv/bnN0cnVjdGlvbi1u/ZXctaGlyZS1vcmll/bnRhdGlvbi1zbWFs/bC5qcGc"
+                      className="w-20 h-20"
+                    ></img>
+                    <div className="text-sm font-bold text-justify justify-start">
+                      <h3>CONSTRUCTION PROJECT LIAISONING</h3>
+                    </div>
+                    <p className="w-3/4 py-3 text-justify text-sm">
+                      Construction project liaisoning refers to the process of
+                      facilitating communication and collaboration between
+                      various stakeholders involved in a construction project.
+                    </p>
+                    <div className="text-orange-600 flex text-sm">
+                      <a href="/power-plant" className="">
+                        <span>Learn More</span>
+                        <i className="fa-solid fa-chevron-right px-1"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div className="w-80  border border-gray-700 border-2">
                     <img
                       src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
                       className="w-20 h-20"
@@ -499,51 +592,34 @@ export default function Home() {
                         <i className="fa-solid fa-chevron-right px-1"></i>
                       </a>
                     </div>
-                  </div>
-                  <div className="w-80">
-                    <img
-                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
-                      className="w-20 h-20"
-                    ></img>
-                    <div className="text-sm font-bold text-justify justify-start">
-                      <h3>CONSTRUCTION PROJECT LIAISONING</h3>
-                    </div>
-                    <p className="w-3/4 py-3 text-justify text-sm">
-                      Construction project liaisoning refers to the process of
-                      facilitating communication and collaboration between
-                      various stakeholders involved in a construction project.
-                    </p>
-                    <div className="text-orange-600 flex text-sm">
-                      <a href="/power-plant" className="">
-                        <span>Learn More</span>
-                        <i className="fa-solid fa-chevron-right px-1"></i>
-                      </a>
-                    </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <section>
-        <div>
-          <div className="bg-gray-200 text-black items-center ">
-            <div className=" flex py-10 ">
-              <div className=" px-20 py-10 w-1/2">
-                <h1 className="text-6xl">Contact Info</h1>
-                <p className="py-5 text-2xl">
-                  Be prepared, stay safe – trust in fire equipment
-                </p>
 
-                <p>Mobile: +91 9354318440</p>
-                <br />
-                <p>Email Us: monolithsafetyexperts@gmail.com</p>
-                <br />
-                <p>
-                  Address: Plot No. 1107, First Floor, Sector 47, Sohna Road,
-                  Near ILD Mall, Gurgaon
-                </p>
+      <section>
+        <div className="mx-20 my-20">
+          <div className=" text-gray-700 items-center">
+            <div className=" flex py-10">
+              <div className=" px-20 py-10 w-1/2">
+                <h1 className="text-6xl font-bold font-mono">Contact Info</h1>
+                <div className="font-semibold">
+                  <p className="py-5 text-2xl">
+                    Be prepared, stay safe – trust in fire equipment
+                  </p>
+
+                  <p>Mobile: +91 9354318440</p>
+                  <br />
+                  <p>Email Us: monolithsafetyexperts@gmail.com</p>
+                  <br />
+                  <p>
+                    Address: Plot No. 1107, First Floor, Sector 47, Sohna Road,
+                    Near ILD Mall, Gurgaon
+                  </p>
+                </div>
 
                 <div className="py-10">
                   <div className="icons-container flex space-x-3 py-5">
@@ -563,7 +639,7 @@ export default function Home() {
               <div className="bg-white px-20 py-20">
                 <form onSubmit={handleSubmit}>
                   <div className="py-2 text-sm">
-                    <label htmlFor="name" className="text-gray-700">
+                    <label htmlFor="name" className="text-gray-700 ">
                       Name
                     </label>
                     <span className="text-red-500">*</span>
@@ -572,7 +648,7 @@ export default function Home() {
                       type="text"
                       name="name"
                       value={formData.name}
-                      className="bg-white text-black text-sm px-1 py-1 w-64"
+                      className="bg-gray-100  text-black text-sm px-1 py-1 w-64 shadow-xl border-none rounded-lg h-10 w-72"
                       placeholder="Full Name"
                       required
                       onChange={handleChange}
@@ -589,7 +665,7 @@ export default function Home() {
                       name="email"
                       value={formData.email}
                       placeholder="Email Address"
-                      className="bg-white text-black px-1 py-1 w-64"
+                      className="bg-gray-100 text-black px-1 py-1 w-64 shadow-xl border-none rounded-lg h-10 w-72"
                       required
                       onChange={handleChange}
                     />
@@ -605,7 +681,7 @@ export default function Home() {
                       type="text"
                       name="company"
                       value={formData.company}
-                      className="bg-white text-black px-1 py-1 w-64"
+                      className="bg-gray-100 text-black px-1 py-1 w-64 shadow-xl border-none rounded-lg h-10 w-72"
                       placeholder="Company Name"
                       required
                       onChange={handleChange}
@@ -621,88 +697,22 @@ export default function Home() {
                     <textarea
                       name="message"
                       value={formData.message}
-                      className="bg-white text-black px-1 py-2 w-64"
+                      className=" bg-gray-100 text-black px-1 py-2 w-64 shadow-xl border-none rounded-lg w-72"
                       placeholder="Enter Message Here"
                       rows="2"
                       onChange={handleChange}
                     ></textarea>
                   </div>
-                  <div className="py-3">
+                  <div className="py-3 text-center">
                     <button
                       type="submit"
-                      className="text-red-500 border border-red-500 py-1 px-3 text-sm"
+                      className=" bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded "
                     >
-                      Send Me Quote
+                      Submit
                     </button>
                   </div>
                 </form>
-                {submitted && <p>Quote submitted successfully!</p>}
-                {/* <form>
-                  <div className="py-2 text-sm">
-                    <label htmlFor="name" className="text-gray-700">
-                      Name
-                    </label>
-                    <span className="text-red-500">*</span>
-                    <br />
-                    <input
-                      type="text"
-                      name="name"
-                      className="bg-gray-100 text-sm px-1 py-1 w-64"
-                      placeholder="Full Name"
-                      required
-                    />
-                  </div>
-                  <div className="py-2 text-sm">
-                    <label htmlFor="email" className="text-gray-700">
-                      Email
-                    </label>
-                    <span className="text-red-500">*</span>
-                    <br />
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Email Address"
-                      className="bg-gray-100 px-1 py-1 w-64"
-                      required
-                    />
-                    <br />
-                  </div>
-                  <div className="py-2 text-sm">
-                    <label htmlFor="companyName" className="text-gray-700">
-                      Company
-                    </label>
-                    <span className="text-red-500">*</span>
-                    <br />
-                    <input
-                      type="text"
-                      name="companyName"
-                      className="bg-gray-100 px-1 py-1 w-64"
-                      placeholder="Company Name"
-                      required
-                    />
-                    <br />
-                  </div>
-                  <div className="py-2 text-sm">
-                    <label for="message" className="text-gray-700">
-                      Message
-                    </label>
-                    <span className="text-red-500">*</span>
-                    <br />
-                    <textarea
-                      className="bg-gray-100 px-1 py-2 w-64"
-                      placeholder="Enter Message Here"
-                      rows="2"
-                    ></textarea>
-                  </div>
-                  <div className="py-3">
-                    <button
-                      type="submit"
-                      className="text-red-500 border border-red-500 py-1 px-3 text-sm"
-                    >
-                      Send Me Quote
-                    </button>
-                  </div>
-                </form> */}
+                {submitted && <p>Contact Form submitted successfully!</p>}
               </div>
             </div>
           </div>

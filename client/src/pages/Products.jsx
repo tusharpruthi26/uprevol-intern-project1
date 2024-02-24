@@ -8,7 +8,7 @@ export default function Products() {
       <section>
         <div className="relative">
           <img
-            className="w-full h-96"
+            className="w-full h-96 shadow-2xl"
             src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
             alt="Product"
           />
@@ -27,10 +27,10 @@ export default function Products() {
         </div>
       </section>
       <section>
-        <div className="flex py-20 px-20 bg-gray-100 ">
+        <div className="flex py-20 px-20 bg-gray-100">
           {/* Card 1 */}
 
-          <div className="bg-white mx-2 flex-1">
+          <div className="bg-white mx-2 flex-1 shadow-2xl rounded-2xl hover:bg-gray-200">
             <div className="px-2 py-3 ">
               <FaCar className="text-red-600 text-4xl" />
               <div className="font-bold text-2xl mb-2">Quality Assurance</div>
@@ -42,7 +42,7 @@ export default function Products() {
             </div>
           </div>
           {/* Card 2 */}
-          <div className="bg-white mx-2 flex-1">
+          <div className="bg-white mx-2 flex-1 shadow-2xl rounded-2xl hover:bg-gray-200">
             <div className="px-6 py-4 ">
               <FaCar className="text-red-600 text-4xl" />
               <div className="font-bold text-2xl mb-2">Durability</div>
@@ -54,7 +54,7 @@ export default function Products() {
             </div>
           </div>
           {/* Card 3 */}
-          <div className="bg-white mx-2 flex-1">
+          <div className="bg-white mx-2 flex-1 shadow-2xl rounded-2xl hover:bg-gray-200">
             <div className="px-6 py-4">
               <FaCar className="text-red-600 text-4xl" />
               <div className="font-bold text-2xl mb-2">ISI Approved</div>
@@ -67,7 +67,7 @@ export default function Products() {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-white mx-2 flex-1">
+          <div className="bg-white mx-2 flex-1 shadow-2xl rounded-2xl hover:bg-gray-200">
             <div className="px-6 py-4">
               <FaCar className="text-red-600 text-4xl" />
               <div className="font-bold text-2xl mb-2">Customization</div>

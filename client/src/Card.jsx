@@ -1,29 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function Card({ imageUrl, title, rating, price, productId }) {
+export default function Card({ imageUrl, title, rating, price }) {
+  const [isAddedToCart, setIsAddedToCart] = useState(false);
+  const [showEnquiryForm, setShowEnquiryForm] = useState(false);
+
   const addToCart = () => {
-    // Send a POST request to your backend to add the product to the cart
-    fetch("http://localhost:3000/cart/add", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        productId, // Add productId to the request body
-        name: title, // Assuming title represents the name of the product
-        price: parseFloat(price.replace("₹", "").replace(",", "")), // Parse the price string to a number
-      }),
-    })
-      .then((response) => {
-        if (response.ok) {
-          console.log("Product added to cart successfully");
-        } else {
-          console.error("Failed to add product to cart");
-        }
-      })
-      .catch((error) => {
-        console.error("Error adding product to cart:", error);
+    // Here you can add logic to send data to the backend and update UI accordingly
+    // For simplicity, just updating UI to show item is added to cart
+    setIsAddedToCart(true);
+  };
+
+  const handleEnquiryButtonClick = () => {
+    // Show enquiry form
+    setShowEnquiryForm(true);
+  };
+
+  const handleFormSubmit = async (formData) => {
+    try {
+      const response = await fetch("http://localhost:3000/enquiry", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          imageUrl,
+          title,
+          rating,
+          price,
+        }),
       });
+      if (response.ok) {
+        console.log("Enquiry submitted successfully");
+        setShowEnquiryForm(false);
+      } else {
+        console.error("Failed to submit enquiry");
+      }
+    } catch (error) {
+      console.error("Error submitting enquiry:", error);
+    }
   };
 
   return (
@@ -34,17 +49,83 @@ export default function Card({ imageUrl, title, rating, price, productId }) {
         <p className="font-semibold">{title}</p>
         <p>{rating}</p>
         <p className="text-gray-600 font-semibold">{price}</p>
+        {!isAddedToCart ? (
+          <button
+            className="text-red-600 hover:bg-red-600 hover:text-white border border-red-600 text-xl px-6 py-2 mt-3"
+            // onClick={() => setShowEnquiryForm(true)}
+            onClick={addToCart}
+          >
+            ADD TO CART
+          </button>
+        ) : (
+          <span className="text-green-600 text-xl mt-3">✔ Added to Cart</span>
+        )}
         <button
-          className="text-red-600 hover:bg-red-600 hover:text-white border border-red-600 text-xl px-6 py-2 mt-3"
-          onClick={addToCart}
+          className="text-white bg-red-600 px-24 mt-3"
+          // onClick={() => setShowEnquiryForm(true)}
+          onClick={handleEnquiryButtonClick}
         >
-          ADD TO CART
-        </button>
-        <button className="text-white bg-red-600 px-24 mt-3">
           ENQUIRY NOW
         </button>
       </div>
+      {showEnquiryForm && <EnquiryForm onSubmit={handleFormSubmit} />}
     </div>
+  );
+}
+
+function EnquiryForm({ onSubmit }) {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSubmit(formData);
+  };
+
+  return (
+    <form
+      onSubmit={handleSubmit}
+      className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+    >
+      <input
+        className="block text-gray-700 text-sm font-bold mb-2 rounded w-full"
+        type="text"
+        name="name"
+        placeholder="Name"
+        value={formData.name}
+        onChange={handleChange}
+      />
+      <input
+        className="block text-gray-700 text-sm font-bold mb-2 rounded w-full"
+        type="email"
+        name="email"
+        placeholder="Email"
+        value={formData.email}
+        onChange={handleChange}
+      />
+      <textarea
+        className="block text-gray-700 text-sm font-bold mb-2 rounded w-full"
+        name="message"
+        placeholder="Message"
+        value={formData.message}
+        onChange={handleChange}
+      />
+      <div className="text-center">
+        <button
+          className="bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
   );
 }
 
