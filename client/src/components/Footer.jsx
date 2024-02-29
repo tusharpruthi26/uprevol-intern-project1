@@ -1,6 +1,7 @@
 import React from "react";
 
 import companyLogo from "../components/logo.png";
+import { IoLogoReact } from "react-icons/io5";
 export default function Footer() {
   return (
     <div className="bg-black text-white ">
@@ -9,7 +10,8 @@ export default function Footer() {
           <div className=" w-1/4">
             <div className="text-sm">
               {/*image */}
-              <img className="mr-3 h-6 sm:h-20" src={companyLogo}></img>
+              {/* <img className="mr-3 h-6 sm:h-20" src={companyLogo}></img> */}
+              <IoLogoReact className="text-white h-16 w-20" />
             </div>
             <p className="text-sm  py-3 text-justify ">
               Safety equipment includes a range of tools and devices that are
@@ -31,11 +33,11 @@ export default function Footer() {
           <div className="text-justify">
             <a href="/services">Services</a>
             <div className="py-4 text-justify">
-              <h2>FIRE BRIGADE</h2>
-              <h2>MANPOWER SUPPLIER</h2>
-              <h2>FIREFIGHTING TRAINING</h2>
-              <h2>FIRE SAFETY EDUCATIONAL COURSES</h2>
-              <h2>CONSTRUCTION PROJECT LIAISONING</h2>
+              <h2>Service 1</h2>
+              <h2>Service 2</h2>
+              <h2>Service 3</h2>
+              <h2>Service 4</h2>
+              <h2>Service 5</h2>
             </div>
           </div>
           <div className="text-justify">
@@ -54,7 +56,7 @@ export default function Footer() {
                 Plot No. 1107, First Floor, Sector 47, Sohna Road, Near ILD
                 Mall, Gurgaon
               </p>
-              <h2>monolithsafetyexperts@gmail.com</h2>
+              <h2>demo@gmail.com</h2>
               <h2>+91 9354318440</h2>
             </div>
           </div>
@@ -63,7 +65,7 @@ export default function Footer() {
         <div className="container py-6">
           <div className="flex justify-around">
             <div className="col">
-              <h2>@Copyright 2023 - Monolith Safety Experts</h2>
+              <h2>@Copyright 2023 - demo project </h2>
             </div>
             <div className="col">
               <h2>Design & Development By UpRevol Technologies</h2>

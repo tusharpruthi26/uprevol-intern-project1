@@ -65,9 +65,9 @@ export default function Home() {
       <section>
         <div>
           <img
-            src={image}
+            src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29ya3xlbnwwfHwwfHx8MA%3D%3D"
             alt="fire brigade image"
-            className="h-100 shadow-2xl"
+            className="h-full w-full shadow-2xl"
           />
 
           <div className=" md:absolute top-1/2 left-1/2 ">
@@ -89,11 +89,11 @@ export default function Home() {
               Be prepared and stay safe: Your comprehensive safety resource.
             </p>
             <br />
-            <button className="px-8 py-3 text-red-600 hover:bg-red-600 hover:text-white border border-red-600 duration-300">
+            <button className="px-8 py-3 text-gray-600 hover:bg-gray-800 hover:text-white border border-gray-700 duration-300">
               Quote Now!
             </button>
             <hr className="my-11 border-gray-600"></hr>
-            <FaPhone className="text-white bg-red-600 text-6xl p-3 rounded-full" />
+            <FaPhone className="text-white bg-gray-700 text-6xl p-3 rounded-full" />
             <p className="text-gray-800 text-lg font-bold">Call Us Today:</p>
             <h3 className="text-white font-semibold text-4xl">
               +91 9354318440
@@ -101,13 +101,143 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <br />
+      <br />
+      <br />
+
+      {/* Designing Some of the Finest Projects... */}
+      <section>
+        <div className="font-mono mx-20 my-20 ">
+          <p className="text-gray-400">Architecture & Design</p>
+          <br />
+          <h1 className="text-gray-800 text-4xl w-3/5">
+            Designing Some of the Finest Projects...
+          </h1>
+        </div>
+      </section>
+      {/* projects card */}
+      <section>
+        <div className="flex space-x-20 mx-20">
+          <div className="hover:scale-110 duration-150">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2VifGVufDB8fDB8fHww"
+              alt="image"
+              className="hover:opacity-80"
+            />
+            <br />
+            <h1 className="font-bold text-2xl ">Iceland 2005</h1>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non
+              orci eu dolor vehicula tempus sed vitae odio. Morbi eget ornare
+              ipsum. Aliquam erat ante, euismod nec euismod quis, fringilla nec
+              lacus.
+            </p>
+          </div>
+          <div className="hover:scale-110 duration-150">
+            <img
+              src="https://imgs.search.brave.com/O9vHMdQvTg-Q_5xxqtjrQGW2ELBxe4zSUaNROF2Ckn8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9w/cm9qZWN0LW1hbmFn/ZW1lbnQtcGxhbm5p/bmctZGV2ZWxvcG1l/bnQtbWVzc2FnZS1i/b3gtbm90aWZpY2F0/aW9uLWdyYXBoaWNf/NTM4NzYtMTIzOTAy/LmpwZz9zaXplPTYy/NiZleHQ9anBn"
+              alt="image"
+              className="hover:opacity-80"
+            />
+            <br />
+            <h1 className="font-bold text-2xl">Norway 1999</h1>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non
+              orci eu dolor vehicula tempus sed vitae odio. Morbi eget ornare
+              ipsum. Aliquam erat ante, euismod nec euismod quis, fringilla nec
+              lacus.
+            </p>
+          </div>
+          <div className="hover:scale-110 duration-150">
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdlYnxlbnwwfHwwfHx8MA%3D%3D"
+              alt="image"
+              className="hover:opacity-80"
+            />
+            <br />
+            <h1 className="font-bold text-2xl">Faroe Islands 2010</h1>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non
+              orci eu dolor vehicula tempus sed vitae odio. Morbi eget ornare
+              ipsum. Aliquam erat ante, euismod nec euismod quis, fringilla nec
+              lacus.
+            </p>
+          </div>
+        </div>
+      </section>
+      <br />
+      <br />
+      <br />
+      {/* contributors */}
+      <section>
+        <div className="float-right mx-20">
+          <div className="flex items-center space-x-2 text-base">
+            <h4 className="font-semibold text-slate-900">Contributors</h4>
+            <span className="rounded-full bg-slate-100 px-2 py-1 text-xs font-semibold text-slate-700">
+              204
+            </span>
+          </div>
+          <div className="mt-3 flex -space-x-2 overflow-hidden">
+            <img
+              className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+              src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <img
+              className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+              src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <img
+              className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+              alt=""
+            />
+            <img
+              className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <img
+              className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+              src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+          </div>
+          <div className="mt-3 text-sm font-medium">
+            <a href="#" className="text-blue-500">
+              + 198 others
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* We have worked with some of the top brands... */}
+      <section>
+        <div className="flex bg-gray-200 my-40 shadow-2xl rounded-3xl mx-10 hover:scale-105 duration-150">
+          <div className="mx-20 my-32 font-mono font-bold text-2xl w-2/5">
+            We have worked with some of the top brands...
+          </div>
+          <div className="flex space-x-10 mx-">
+            <img src="https://assets-global.website-files.com/604a43be067258e3cfd48400/604a9c5130b93d0a4fe777ad_logo-2.svg" />
+            <img src="https://assets-global.website-files.com/604a43be067258e3cfd48400/604a9c51956929dde7fbf69d_logo-3.svg" />
+            <img src="https://assets-global.website-files.com/604a43be067258e3cfd48400/604a9c52929b95917e2b4384_logo-1.svg" />
+            <img src="https://assets-global.website-files.com/604a43be067258e3cfd48400/604a9c52fbef19e5eb29e10f_logo-4.svg" />
+            <img src="https://assets-global.website-files.com/604a43be067258e3cfd48400/604a9c52b0a8651b898102c9_logo-5.svg" />
+          </div>
+        </div>
+      </section>
+
       <section className="">
-        <div className="container mx-auto flex flex-col items-center py-10 md:flex-row py-20">
+        <div className="container mx-auto flex flex-col items-center py-2 md:flex-row py-2">
           <div className="w-full md:w-2/3 flex items-center justify-center">
             <div className="w-full md:w-1/2 space-y-2">
-              <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left">
-                Equip yourself for safety emergencies: The latest and most
-                reliable safety equipments
+              <h1 className="text-2xl md:text-2xl font-bold text-center md:text-left">
+                Equip yourself for emergencies: The latest and most reliable
+                safety equipments
               </h1>
               <p className="text-center md:text-left">
                 This helps to emphasize the importance of having the right
@@ -130,7 +260,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-red-600 text-white items-center p-5 md:p-20 w-full md:w-1/2 mt-10 md:mt-0">
+          <div className="bg-gray-700 text-white items-center p-5 md:p-20 w-full md:w-1/2 mt-10 md:mt-0 rounded-3xl hover:scale-110 duration-150">
             <h1 className="py-5 text-center md:text-left">
               Let's Talk our Expertise
             </h1>
@@ -166,83 +296,19 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <section className="">
-        <div className="container flex items-center py-20">
-          <div className=" w-full flex items-center justify-center">
-            <div className=" w-1/2 space-y-2 ms-20">
-              <h1 className="text-4xl font-bold">
-                Equip yourself for safety emergencies: The latest and most
-                reliable safety equipments
-              </h1>
-              <p>
-                This help to emphasizes the importance of having the right
-                safety equipment to protect yourself and your property from fire
-                emergencies. It suggests that the equipment being offered is the
-                latest and most reliable, which can give potential customers
-                confidence in their purchase. The use of the phrase “equip
-                yourself” also highlights the proactive approach to fire safety,
-                encouraging individuals and businesses to take action before an
-                emergency occurs.
-              </p>
-              <br />
-              <br />
-              <a href="/about" className="text-orange-500">
-                About us<i className="fa-solid fa-arrow-right ms-1"></i>
-              </a>
-              <br />
-              <br />
-              <br />
-              <br />
-            </div>
-          </div>
-
-          <div className=" bg-red-600 text-white items-center px-20 w-2/3 p-28">
-            <div>
-              <h1 className="py-10">Lets Talk our Expertise</h1>
-              <div className="flex">
-                <div className="flex">
-                  <h1 className="text-5xl">
-                    5+<i className="fa-solid fa-plus"></i>
-                  </h1>
-                  <h1 className="text-5xl ms-48">
-                    500+<i className="fa-solid fa-plus"></i>
-                  </h1>
-                </div>
-              </div>
-              <div className="flex">
-                <h1>Years In Business</h1>
-                <h1 className="ms-32">Happy Customers</h1>
-              </div>
-              <br />
-              <br />
-              <br />
-              <div className="flex">
-                <div className="flex">
-                  <h1 className="text-5xl">
-                    5<i></i>
-                  </h1>
-                  <h1 className="text-5xl ms-52">
-                    200+<i className="fa-solid fa-plus"></i>
-                  </h1>
-                </div>
-              </div>
-              <div className="flex">
-                <h1>Licensed Officer</h1>
-                <h1 className="ms-32">Assets Protected</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      <section>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      {/* <section>
         <div className="container mx-auto px-4">
           <div className="">
             <CardList />
           </div>
         </div>
-      </section>
-
+      </section> */}
       {/* <div className="flex bg-gray-100 px-18 py-20">
           <div className="card w-full px-7 " style={{ width: "30rem" }}>
             <img
@@ -322,9 +388,8 @@ export default function Home() {
             </div>
           </div>
         </div> */}
-
       <section>
-        <div className="bg-gray-800">
+        <div className="bg-gray-800 ">
           <div className=" text-center px-20 py-20">
             <h4 className="text-white">WHY CHOOSE US</h4>
             <h1 className="text-4xl text-white py-5">What Sets Us Apart</h1>
@@ -332,7 +397,7 @@ export default function Home() {
             <div className="px-10 py-5">
               <div className="container ">
                 <div className="flex">
-                  <div className="  w-1/3 px-5 py-5 border border-gray-500 ">
+                  <div className="  w-1/3 px-5 py-5 border border-gray-500 hover:scale-110 duration-150">
                     <div className="text-left">
                       <i className="fa-solid fa-clock text-red-600 text-2xl "></i>
                     </div>
@@ -348,7 +413,7 @@ export default function Home() {
                       fulfillment.
                     </p>
                   </div>
-                  <div className="  w-1/3 px-5 py-5 border border-gray-500 ">
+                  <div className="  w-1/3 px-5 py-5 border border-gray-500 hover:scale-110 duration-150">
                     <div className="text-left">
                       <i className="fa-solid fa-comments text-red-600 text-2xl "></i>
                     </div>
@@ -363,7 +428,7 @@ export default function Home() {
                       the need for intentional disconnection and rest.
                     </p>
                   </div>
-                  <div className="  w-1/3 px-5 py-5 border border-gray-500 ">
+                  <div className="  w-1/3 px-5 py-5 border border-gray-500 hover:scale-110 duration-150">
                     <div className="text-left">
                       <i className="fa-solid fa-car text-red-600 text-2xl"></i>
                     </div>
@@ -384,7 +449,7 @@ export default function Home() {
               </div>
               <div className="container ">
                 <div className="flex">
-                  <div className="  w-1/3 px-5 py-5 border border-gray-500 ">
+                  <div className="  w-1/3 px-5 py-5 border border-gray-500 hover:scale-110 duration-150">
                     <div className="text-left">
                       <i className="fa-solid fa-fire-extinguisher text-red-600 text-2xl"></i>
                     </div>
@@ -401,7 +466,7 @@ export default function Home() {
                       communication channels, and necessary resources.
                     </p>
                   </div>
-                  <div className="  w-1/3 px-5 py-5 border border-gray-500 ">
+                  <div className="  w-1/3 px-5 py-5 border border-gray-500 hover:scale-110 duration-150">
                     <div className="text-left">
                       <i className="fa-solid fa-laptop-house text-red-600 text-2xl"></i>
                     </div>
@@ -419,7 +484,7 @@ export default function Home() {
                       saving lives.
                     </p>
                   </div>
-                  <div className="  w-1/3 px-5 py-5 border border-gray-500 ">
+                  <div className="  w-1/3 px-5 py-5 border border-gray-500 hover:scale-110 duration-150">
                     <div className="text-left">
                       <i className="fa-solid fa-user-tie text-red-600 text-2xl"></i>
                     </div>
@@ -444,162 +509,6 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="px-10 py-32 bg-gray-200 ">
-        <div className="container text-center ">
-          <div className="justify-around flex">
-            <div className=" px-10  py-10 w-1/3">
-              <h2 className="text-4xl text-justify text-black font-bold leading-7">
-                Top-rated Services For Our Safety Equipments
-              </h2>
-              <p className="py-10 text-justify text-lg">
-                Safety equipment services are designed to help businesses and
-                organizations maintain safe working environments. These services
-                typically include the installation, maintenance, and repair of
-                safety equipment such as fire alarms, sprinkler systems,
-                emergency lighting, and security systems.
-              </p>
-              <div className="py-5 text-left text-sm">
-                <a
-                  href="/services"
-                  className="border border-orange-500 px-1 py-1 text-orange-500 hover:bg-orange-500 hover:text-white"
-                >
-                  Check All Services
-                  <i className="fa-solid fa-chevron-right px-1"></i>
-                </a>
-              </div>
-            </div>
-            <div className="py-10 ">
-              <div className="container text-center ">
-                <div className="grid grid-cols-2 ">
-                  <div className="w-80 mr-4 shadow-2xl bg-gray-300 hover:bg-gray-400 rounded-2xl">
-                    <img
-                      src="https://imgs.search.brave.com/RalHD8cB_iWHFxbNWoWeR0FVFgmnSlr0yVp9ya92bRs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTc2/ODc1NDQ2L3Bob3Rv/L21lbGJvdXJuZS1m/aXJlLWJyaWdhZGUu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PS0wRlV1Y09wNEky/Z0JBR2RzLV95Sm9F/bzlLQzlhYldXa25t/ZFJrZmNVa3c9"
-                      className="w-20 h-20"
-                    ></img>
-                    <div className="text-sm font-bold text-justify">
-                      <h3>FIRE BRIGADE </h3>
-                      <h3>(RENTALS/MANUFACTURING)</h3>
-                    </div>
-                    <p className="w-3/4 py-3 text-justify text-sm">
-                      We provide an essential service to communities and
-                      industries, offering specialized equipment and expertise
-                      to prevent and respond to fire incidents.
-                    </p>
-                    <div className="text-orange-600 flex text-sm">
-                      <a href="/power-plant" className="">
-                        <span>Learn More</span>
-                        <i className="fa-solid fa-chevron-right px-1"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="w-80 ml-4 shadow-2xl bg-gray-300 hover:bg-gray-400 rounded-2xl">
-                    <img
-                      src="https://imgs.search.brave.com/1Qgb-q8swaYo_Cm-7BmUAfXEYL1z6xpgrZN7PwjV-p0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9idWls/ZGVleS5jb20vdXBs/b2Fkcy9nYWxsZXJ5/L3VuaXR5LWZpcmUt/YW5kLXNhZmV0eS1z/ZXJ2aWNlcy1sbGMv/ZmlyZS1maWdodC53/ZWJw"
-                      className="w-20 h-20"
-                    ></img>
-                    <div className="text-sm font-bold text-justify justify-start">
-                      <h3>MANPOWER SUPPLIER</h3>
-                      <h3>(FIRE/SECURITY)</h3>
-                    </div>
-                    <p className="w-3/4 py-3 text-justify text-sm">
-                      A manpower supplier in the fire and security industry
-                      typically provides personnel for fire and security-related
-                      jobs.
-                    </p>
-                    <div className="text-orange-600 flex text-sm">
-                      <a href="/power-plant" className="">
-                        <span>Learn More</span>
-                        <i className="fa-solid fa-chevron-right px-1"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="w-80 mt-8 shadow-2xl bg-gray-300 hover:bg-gray-400 rounded-2xl">
-                    <img
-                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
-                      className="w-20 h-20"
-                    ></img>
-                    <div className="text-sm font-bold text-justify justify-start">
-                      <h3>FIREFIGHTING TRAINING</h3>
-                    </div>
-                    <p className="w-3/4 py-3 text-justify text-sm">
-                      Firefighting training is a critical aspect of ensuring
-                      public safety and minimizing property damage in the event
-                      of a fire.
-                    </p>
-                    <div className="text-orange-600 flex text-sm">
-                      <a href="/power-plant" className="">
-                        <span>Learn More</span>
-                        <i className="fa-solid fa-chevron-right px-1"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="w-80 mt-8 ml-4 shadow-2xl bg-gray-300 hover:bg-gray-400 rounded-2xl">
-                    <img
-                      src="https://imgs.search.brave.com/D4cXgQzmomr6qvdTbbRbB4ZkWGjrMBIoVicoEPrZdfk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/dmZzZmlyZS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjEv/MDYvaVN0b2NrLTEx/ODY3MDA4ODYtMTgw/eDE4MC5qcGc"
-                      className="w-20 h-20"
-                    ></img>
-                    <div className="text-sm font-bold text-justify justify-start">
-                      <h3>FIRE SAFETY EDUCATIONAL COURSES</h3>
-                    </div>
-                    <p className="w-3/4 py-3 text-justify text-sm">
-                      Fire safety educational courses are designed to teach
-                      individuals about the principles and practices of fire
-                      safety.
-                    </p>
-                    <div className="text-orange-600 flex text-sm">
-                      <a href="/power-plant" className="">
-                        <span>Learn More</span>
-                        <i className="fa-solid fa-chevron-right px-1"></i>
-                      </a>
-                    </div>
-                  </div>
-                  {/* <div className="w-80  border border-gray-700 border-2">
-                    <img
-                      src="https://imgs.search.brave.com/wbRIUGMlAtqnBgTLMy8vkENj1ji8GWfp2tEmUzhfeMA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/dHJhdmVsZXJzLmNv/bS9pdy1pbWFnZXMv/cmVzb3VyY2VzL0J1/c2luZXNzL1NtYWxs/L2J1c2luZXNzLWlu/ZHVzdHJpZXMvY29u/c3RydWN0aW9uL2Nv/bnN0cnVjdGlvbi1u/ZXctaGlyZS1vcmll/bnRhdGlvbi1zbWFs/bC5qcGc"
-                      className="w-20 h-20"
-                    ></img>
-                    <div className="text-sm font-bold text-justify justify-start">
-                      <h3>CONSTRUCTION PROJECT LIAISONING</h3>
-                    </div>
-                    <p className="w-3/4 py-3 text-justify text-sm">
-                      Construction project liaisoning refers to the process of
-                      facilitating communication and collaboration between
-                      various stakeholders involved in a construction project.
-                    </p>
-                    <div className="text-orange-600 flex text-sm">
-                      <a href="/power-plant" className="">
-                        <span>Learn More</span>
-                        <i className="fa-solid fa-chevron-right px-1"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="w-80  border border-gray-700 border-2">
-                    <img
-                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
-                      className="w-20 h-20"
-                    ></img>
-                    <div className="text-sm font-bold text-justify justify-start">
-                      <h3>CONSTRUCTION PROJECT LIAISONING</h3>
-                    </div>
-                    <p className="w-3/4 py-3 text-justify text-sm">
-                      Construction project liaisoning refers to the process of
-                      facilitating communication and collaboration between
-                      various stakeholders involved in a construction project.
-                    </p>
-                    <div className="text-orange-600 flex text-sm">
-                      <a href="/power-plant" className="">
-                        <span>Learn More</span>
-                        <i className="fa-solid fa-chevron-right px-1"></i>
-                      </a>
-                    </div>
-                  </div> */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <section>
         <div className="mx-20 my-20">
           <div className=" text-gray-700 items-center">
@@ -608,12 +517,12 @@ export default function Home() {
                 <h1 className="text-6xl font-bold font-mono">Contact Info</h1>
                 <div className="font-semibold">
                   <p className="py-5 text-2xl">
-                    Be prepared, stay safe – trust in fire equipment
+                    Be prepared, stay safe – trusted website
                   </p>
 
                   <p>Mobile: +91 9354318440</p>
                   <br />
-                  <p>Email Us: monolithsafetyexperts@gmail.com</p>
+                  <p>Email Us: demo@gmail.com</p>
                   <br />
                   <p>
                     Address: Plot No. 1107, First Floor, Sector 47, Sohna Road,
@@ -706,7 +615,7 @@ export default function Home() {
                   <div className="py-3 text-center">
                     <button
                       type="submit"
-                      className=" bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded "
+                      className=" bg-gray-700 hover:bg-gray-800 text-white font-bold py-2 px-4 rounded "
                     >
                       Submit
                     </button>

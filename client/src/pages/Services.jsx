@@ -1,17 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaCar } from "react-icons/fa";
+import about from "./images/about.jpg";
+import { IoLogoReact } from "react-icons/io5";
 
 export default function Services() {
   return (
     <div className="bg-gray-100">
       <section>
         <div className="relative">
-          <img
-            className="w-full h-96 shadow-2xl"
-            src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
-            alt="services"
-          />
+          <img className="w-full h-96 shadow-2xl" src={about} alt="services" />
           <div className="absolute top-1/2 left-1/2 text-center transform -translate-x-1/2 -translate-y-1/3">
             <h1 className="text-7xl font-bold">SERVICES</h1>
             <br />
@@ -19,7 +17,7 @@ export default function Services() {
 
             <Link
               to="/"
-              className="inline-block  text-white border border-red-600 border-2  hover:bg-red-600 px-7 py-2 "
+              className="inline-block  text-white border border-gray-800 border-2  hover:bg-gray-800 px-7 py-2 "
             >
               Back to Home
             </Link>
@@ -30,12 +28,11 @@ export default function Services() {
         <div className="flex py-36 px-10 space-x-4 ">
           {/* Card 1 */}
 
-          <div className="max-w-md shadow-xl rounded-2xl hover:bg-gray-200">
+          <div className="max-w-md shadow-xl rounded-2xl hover:bg-gray-200 hover:scale-110 duration-150">
             <div className="px-6 py-4">
-              <FaCar className="text-red-600 text-3xl" />
-              <div className="font-bold text-2xl mb-2">
-                FIRE BRIGADE (RENTALS/MANUFACTURING)
-              </div>
+              {/* <FaCar className="text-red-600 text-3xl" /> */}
+              <IoLogoReact className="text-gray-800 h-16 w-20 mt-8 ml-32" />
+              <div className="font-bold text-2xl mb-2">Service 1</div>
               <p className="text-gray-700 text-base">
                 Fire brigades are emergency services that respond to fires and
                 other disasters, providing rescue, firefighting, and medical
@@ -44,13 +41,11 @@ export default function Services() {
             </div>
           </div>
           {/* Card 2 */}
-          <div className="max-w-md shadow-xl rounded-2xl hover:bg-gray-200">
+          <div className="max-w-md shadow-xl rounded-2xl hover:bg-gray-200 hover:scale-110 duration-150">
             <div className="px-6 py-4">
-              <FaCar className="text-red-600 text-3xl" />
-              <div className="font-bold text-2xl mb-2">
-                MANPOWER SUPPLIER <br />
-                (FIRE/SECURITY)
-              </div>
+              {/* <FaCar className="text-red-600 text-3xl" /> */}
+              <IoLogoReact className="text-gray-800 h-16 w-20 mt-8 ml-32" />
+              <div className="font-bold text-2xl mb-2">Service 2</div>
               <p className="text-gray-700 text-base">
                 Manpower suppliers provide staffing solutions to companies by
                 sourcing and placing candidates for various roles and positions.
@@ -58,13 +53,11 @@ export default function Services() {
             </div>
           </div>
           {/* Card 3 */}
-          <div className="max-w-md shadow-xl rounded-2xl hover:bg-gray-200">
+          <div className="max-w-md shadow-xl rounded-2xl hover:bg-gray-200 hover:scale-110 duration-150">
             <div className="px-6 py-4">
-              <FaCar className="text-red-600 text-3xl" />
-              <div className="font-bold text-2xl mb-2">
-                FIRE SAFETY EDUCATIONAL
-                <br /> COURSES
-              </div>
+              {/* <FaCar className="text-red-600 text-3xl" /> */}
+              <IoLogoReact className="text-gray-800 h-16 w-20 mt-8 ml-32" />
+              <div className="font-bold text-2xl mb-2">Service 3 </div>
               <p className="text-gray-700 text-base">
                 Fire safety educational courses provide essential knowledge and
                 skills to prevent and respond to fires effectively, reducing the
@@ -78,15 +71,13 @@ export default function Services() {
         <div className="flex flex-col md:flex-row items-center px-44 py-24">
           <div>
             <img
-              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
+              src={about}
               alt="fire Brigade"
               className="rounded-xl h-72 mr-10 shadow-2xl"
             />
           </div>
           <div className="max-w-lg ">
-            <h1 className="text-4xl font-serif">
-              FIRE BRIGADE (RENTALS/MANUFACTURING)
-            </h1>
+            <h1 className="text-4xl font-serif">Web Design and Development:</h1>
             <br />
             <p>
               We provide an essential service to communities and industries,
@@ -103,9 +94,7 @@ export default function Services() {
       <section>
         <div className="flex flex-col md:flex-row items-center px-28 py-24">
           <div className="max-w-lg ">
-            <h1 className="text-4xl font-serif">
-              MANPOWER SUPPLIER (FIRE/SECURITY)
-            </h1>
+            <h1 className="text-4xl font-serif">Digital Marketing:</h1>
             <br />
             <p>
               A manpower supplier in the fire and security industry typically
@@ -120,7 +109,7 @@ export default function Services() {
           </div>
           <div>
             <img
-              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
+              src={about}
               alt="fire Brigade"
               className="rounded-xl ml-20 h-72 shadow-2xl "
             />
@@ -131,13 +120,13 @@ export default function Services() {
         <div className="flex flex-col md:flex-row items-center px-44 py-24">
           <div>
             <img
-              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
+              src={about}
               alt="fire Brigade"
               className="rounded-xl mr-44 h-56 w-96 shadow-2xl"
             />
           </div>
           <div className="max-w-lg ">
-            <h1 className="text-4xl font-serif">FIREFIGHTING TRAINING</h1>
+            <h1 className="text-4xl font-serif">Graphic Design:</h1>
             <br />
             <p>
               Firefighting training is a critical aspect of ensuring public
@@ -155,7 +144,7 @@ export default function Services() {
         <div className="flex flex-col md:flex-row items-center px-28 py-24">
           <div className="max-w-lg ">
             <h1 className="text-4xl font-serif">
-              FIRE SAFETY EDUCATIONAL COURSES
+              Content Writing and Copywriting:
             </h1>
             <br />
             <p>
@@ -170,7 +159,7 @@ export default function Services() {
           </div>
           <div>
             <img
-              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
+              src={about}
               alt="fire Brigade"
               className="rounded-xl ml-20 h-64 w-full shadow-2xl"
             />
@@ -181,15 +170,13 @@ export default function Services() {
         <div className="flex flex-col md:flex-row items-center px-44 py-24">
           <div>
             <img
-              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
+              src={about}
               alt="fire Brigade"
               className="rounded-xl h-72 mr-10 shadow-2xl"
             />
           </div>
           <div className="max-w-lg ">
-            <h1 className="text-4xl font-serif">
-              CONSTRUCTION PROJECT LIASONING
-            </h1>
+            <h1 className="text-4xl font-serif">Service 5</h1>
             <br />
             <p>
               Construction project liaisoning refers to the process of
@@ -208,15 +195,183 @@ export default function Services() {
       <div className="text-center pb-14">
         <Link
           to="/contact"
-          className="text-red-600 border border-red-600 border-2  hover:bg-red-600 hover:text-white px-7 py-2 shadow-xl "
+          className="text-gray-800 border border-gray-800 border-2  hover:bg-gray-800 hover:text-white px-7 py-2 shadow-xl "
         >
           QUOTE NOW
         </Link>
       </div>
+
+      <section>
+        <div className="px-10 py-32 bg-gray-200 ">
+          <div className="container text-center ">
+            <div className="justify-around flex">
+              <div className=" px-10  py-10 w-1/3">
+                <h2 className="text-4xl text-justify text-black font-bold leading-7">
+                  Top-rated Services For Our Website
+                </h2>
+                <p className="py-10 text-justify text-lg">
+                  These services cater to various aspects of building and
+                  promoting an online presence, making them essential for
+                  businesses and individuals looking to establish or improve
+                  their digital footprint.
+                  <br />
+                  <br />
+                  These services cater to various aspects of building and
+                  promoting an online presence,
+                  <br /> making them essential for businesses and individuals
+                  looking to establish or improve their digital footprint.
+                </p>
+                <div className="py-5 text-left text-sm">
+                  <a
+                    href="/services"
+                    className="border border-orange-500 px-1 py-1 text-orange-500 hover:bg-orange-500 hover:text-white"
+                  >
+                    Check All Services
+                    <i className="fa-solid fa-chevron-right px-1"></i>
+                  </a>
+                </div>
+              </div>
+              <section>
+                <div className="py-10 ">
+                  <div className="container">
+                    <div className="grid grid-cols-2">
+                      <div className="w-80 mr-4 shadow-2xl bg-gray-300 hover:bg-gray-400 rounded-2xl hover:scale-110 duration-150">
+                        {/* <img
+                          src="https://imgs.search.brave.com/RalHD8cB_iWHFxbNWoWeR0FVFgmnSlr0yVp9ya92bRs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTc2/ODc1NDQ2L3Bob3Rv/L21lbGJvdXJuZS1m/aXJlLWJyaWdhZGUu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PS0wRlV1Y09wNEky/Z0JBR2RzLV95Sm9F/bzlLQzlhYldXa25t/ZFJrZmNVa3c9"
+                          className="w-20 h-20"
+                        ></img> */}
+                        <IoLogoReact className="text-gray-800 h-16 w-20 mt-8" />
+                        <div className="text-sm font-bold text-justify">
+                          <h3>Web Design and Development: </h3>
+                        </div>
+                        <p className="w-3/4 py-3 text-justify text-sm">
+                          Offer professional web design and development services
+                          tailored to client's needs, including creating
+                          responsive and visually appealing websites.
+                        </p>
+                        <div className="text-orange-600 flex text-sm">
+                          <a href="/power-plant" className="">
+                            <span>Learn More</span>
+                            <i className="fa-solid fa-chevron-right px-1"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div className="w-80 ml-4 shadow-2xl bg-gray-300 hover:bg-gray-400 rounded-2xl hover:scale-110 duration-150">
+                        {/* <img
+                          src="https://imgs.search.brave.com/1Qgb-q8swaYo_Cm-7BmUAfXEYL1z6xpgrZN7PwjV-p0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9idWls/ZGVleS5jb20vdXBs/b2Fkcy9nYWxsZXJ5/L3VuaXR5LWZpcmUt/YW5kLXNhZmV0eS1z/ZXJ2aWNlcy1sbGMv/ZmlyZS1maWdodC53/ZWJw"
+                          className="w-20 h-20"
+                        ></img> */}
+                        <IoLogoReact className="text-gray-800 h-16 w-20 mt-8" />
+                        <div className="text-sm font-bold text-justify justify-start">
+                          <h3>Digital Marketing:</h3>
+                        </div>
+                        <p className="w-3/4 py-3 text-justify text-sm">
+                          Provide digital marketing services to help businesses
+                          promote their products or services online and reach
+                          their target audience effectively.
+                        </p>
+                        <div className="text-orange-600 flex text-sm">
+                          <a href="/power-plant" className="">
+                            <span>Learn More</span>
+                            <i className="fa-solid fa-chevron-right px-1"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div className="w-80 mt-8 shadow-2xl bg-gray-300 hover:bg-gray-400 rounded-2xl hover:scale-110 duration-150">
+                        {/* <img
+                          src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
+                          className="w-20 h-20"
+                        ></img> */}
+                        <IoLogoReact className="text-gray-800 h-16 w-20 mt-8" />
+                        <div className="text-sm font-bold text-justify justify-start">
+                          <h3>Graphic Design:</h3>
+                        </div>
+                        <p className="w-3/4 py-3 text-justify text-sm">
+                          Offer creative graphic design services to help
+                          businesses enhance their brand identity and visual
+                          communication materials.
+                        </p>
+                        <div className="text-orange-600 flex text-sm">
+                          <a href="/power-plant" className="">
+                            <span>Learn More</span>
+                            <i className="fa-solid fa-chevron-right px-1"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div className="w-80 mt-8 ml-4 shadow-2xl bg-gray-300 hover:bg-gray-400 rounded-2xl hover:scale-110 duration-150">
+                        {/* <img
+                          src="https://imgs.search.brave.com/D4cXgQzmomr6qvdTbbRbB4ZkWGjrMBIoVicoEPrZdfk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/dmZzZmlyZS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjEv/MDYvaVN0b2NrLTEx/ODY3MDA4ODYtMTgw/eDE4MC5qcGc"
+                          className="w-20 h-20"
+                        ></img> */}
+                        <IoLogoReact className="text-gray-800 h-16 w-20 mt-8" />
+
+                        <div className="text-sm font-bold text-justify justify-start">
+                          <h3>Content Writing and Copywriting:</h3>
+                        </div>
+                        <p className="w-3/4 py-3 text-justify text-sm">
+                          Provide high-quality content writing and copywriting
+                          services to businesses looking to engage their
+                          audience with compelling and informative content.
+                        </p>
+                        <div className="text-orange-600 flex text-sm">
+                          <a href="/power-plant" className="">
+                            <span>Learn More</span>
+                            <i className="fa-solid fa-chevron-right px-1"></i>
+                          </a>
+                        </div>
+                      </div>
+                      {/* <div className="w-80  border border-gray-700 border-2">
+                    <img
+                      src="https://imgs.search.brave.com/wbRIUGMlAtqnBgTLMy8vkENj1ji8GWfp2tEmUzhfeMA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/dHJhdmVsZXJzLmNv/bS9pdy1pbWFnZXMv/cmVzb3VyY2VzL0J1/c2luZXNzL1NtYWxs/L2J1c2luZXNzLWlu/ZHVzdHJpZXMvY29u/c3RydWN0aW9uL2Nv/bnN0cnVjdGlvbi1u/ZXctaGlyZS1vcmll/bnRhdGlvbi1zbWFs/bC5qcGc"
+                      className="w-20 h-20"
+                    ></img>
+                    <div className="text-sm font-bold text-justify justify-start">
+                      <h3>CONSTRUCTION PROJECT LIAISONING</h3>
+                    </div>
+                    <p className="w-3/4 py-3 text-justify text-sm">
+                      Construction project liaisoning refers to the process of
+                      facilitating communication and collaboration between
+                      various stakeholders involved in a construction project.
+                    </p>
+                    <div className="text-orange-600 flex text-sm">
+                      <a href="/power-plant" className="">
+                        <span>Learn More</span>
+                        <i className="fa-solid fa-chevron-right px-1"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div className="w-80  border border-gray-700 border-2">
+                    <img
+                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
+                      className="w-20 h-20"
+                    ></img>
+                    <div className="text-sm font-bold text-justify justify-start">
+                      <h3>CONSTRUCTION PROJECT LIAISONING</h3>
+                    </div>
+                    <p className="w-3/4 py-3 text-justify text-sm">
+                      Construction project liaisoning refers to the process of
+                      facilitating communication and collaboration between
+                      various stakeholders involved in a construction project.
+                    </p>
+                    <div className="text-orange-600 flex text-sm">
+                      <a href="/power-plant" className="">
+                        <span>Learn More</span>
+                        <i className="fa-solid fa-chevron-right px-1"></i>
+                      </a>
+                    </div>
+                  </div> */}
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
       <section>
         <div className="relative">
           <img
-            src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
+            src={about}
             alt="Fire Security Training"
             className="w-full h-96 opacity-80 shadow-2xl"
           />
@@ -237,7 +392,7 @@ export default function Services() {
             </p>
             <Link
               to="/contact"
-              className="inline-block  text-black hover:text-black border border-black border-2 hover:bg-white px-7 py-2 "
+              className="inline-block  text-gray-800 hover:text-white border border-gray-800 border-2 hover:bg-gray-800 px-7 py-2 "
             >
               REGISTER YOURSELF
             </Link>
@@ -247,9 +402,10 @@ export default function Services() {
       <section className="flex flex-wrap justify-center py-32">
         {/* Card 1 */}
 
-        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center shadow-xl">
+        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center shadow-xl hover:scale-110 duration-150">
           <div className="px-6 py-4">
-            <FaCar className="text-red-600 text-6xl mt-8 ml-32" />
+            {/* <FaCar className="text-red-600 text-6xl mt-8 ml-32" /> */}
+            <IoLogoReact className="text-gray-800 h-16 w-20 mt-8 ml-28" />
             <div className="font-bold text-xl mb-4">Identify Fire Hazards</div>
             <p className="text-gray-700 text-base">
               The first step in developing a fire security training program is
@@ -259,9 +415,10 @@ export default function Services() {
         </div>
 
         {/* Card 2 */}
-        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center shadow-xl">
+        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center shadow-xl hover:scale-110 duration-150">
           <div className="px-6 py-4">
-            <FaCar className="text-red-600 text-6xl mt-8 ml-32" />
+            {/* <FaCar className="text-red-600 text-6xl mt-8 ml-32" /> */}
+            <IoLogoReact className="text-gray-800 h-16 w-20 mt-8 ml-28" />
             <div className="font-bold text-xl mb-4">
               Develop Emergency Response Procedures
             </div>
@@ -273,9 +430,10 @@ export default function Services() {
         </div>
 
         {/* Card 3 */}
-        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center shadow-xl">
+        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center shadow-xl hover:scale-110 duration-150">
           <div className="px-6 py-4">
-            <FaCar className="text-red-600 text-6xl mt-8 ml-32" />
+            {/* <FaCar className="text-red-600 text-6xl mt-8 ml-32" /> */}
+            <IoLogoReact className="text-gray-800 h-16 w-20 mt-8 ml-28" />
             <div className="font-bold text-xl mb-4">Train Employees</div>
             <p className="text-gray-700 text-base">
               Providing employees with the knowledge and skills needed to
@@ -285,9 +443,10 @@ export default function Services() {
         </div>
 
         {/* Card 4 */}
-        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center shadow-xl">
+        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center shadow-xl hover:scale-110 duration-150">
           <div className="px-6 py-4">
-            <FaCar className="text-red-600 text-6xl mt-8 ml-32" />
+            {/* <FaCar className="text-red-600 text-6xl mt-8 ml-32" /> */}
+            <IoLogoReact className="text-gray-800 h-16 w-20 mt-8 ml-28" />
             <div className="font-bold text-xl mb-4">
               Maintain Fire Safety Equipment
             </div>
@@ -299,9 +458,10 @@ export default function Services() {
         </div>
 
         {/* Card 5 */}
-        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center shadow-xl">
+        <div className="w-96 bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center shadow-xl hover:scale-110 duration-150">
           <div className="px-6 py-4">
-            <FaCar className="text-red-600 text-6xl mt-8 ml-32" />
+            {/* <FaCar className="text-red-600 text-6xl mt-8 ml-32" /> */}
+            <IoLogoReact className="text-gray-800 h-16 w-20 mt-8 ml-28" />
             <div className="font-bold text-xl mb-4">
               Complains With Regulation
             </div>
@@ -313,9 +473,10 @@ export default function Services() {
         </div>
 
         {/* Card 6 */}
-        <div className="w-96  bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center shadow-xl">
+        <div className="w-96  bg-gray-200 hover:bg-white rounded-lg overflow-hidden mx-2 my-4 text-center shadow-xl hover:scale-110 duration-150">
           <div className="px-6 py-4 ">
-            <FaCar className="text-red-600 text-6xl mt-8 ml-32" />
+            {/* <FaCar className="text-red-600 text-6xl mt-8 ml-32" /> */}
+            <IoLogoReact className="text-gray-800 h-16 w-20 mt-8 ml-28" />
 
             <div className="font-bold text-xl mb-4">
               Update Security Training Program

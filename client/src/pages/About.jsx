@@ -1,22 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaCar } from "react-icons/fa";
+import about from "./images/about.jpg";
+
 export default function About() {
   return (
     <div>
       <section>
         <div className="relative">
-          <img
-            className="w-full h-80 shadow-2xl"
-            src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
-            alt="services"
-          />
+          <img className="w-full h-80 shadow-2xl" src={about} alt="services" />
           <div className="absolute top-1/2 left-1/2 text-center transform -translate-x-1/2 -translate-y-1/3">
             <h1 className="text-7xl font-bold">ABOUT US</h1>
             <br />
             <br />
             <Link
               to="/contact"
-              className="inline-block  text-white border border-red-600 border-2 hover:border-white hover:bg-red-600 px-7 py-2 "
+              className="inline-block  hover:text-white border border-gray-800 border-2  hover:bg-gray-800 px-7 py-2 "
             >
               Back to Home
             </Link>
@@ -83,7 +82,8 @@ export default function About() {
       <br />
       <br />
       <br />
-      <section>
+      {/* why monolith */}
+      {/* <section>
         <div className="py-20 px-40 ">
           <h1 className="text-4xl text-center font-bold"> Why Monolith?</h1>
           <br />
@@ -171,14 +171,14 @@ export default function About() {
         <br />
         <br />
         <br />
-      </section>
+      </section> */}
       <section>
         <div className="px-20 py-20 rounded-3xl shadow-2xl bg-gray-200 mx-10 my-10">
           <div className="container text-center relative">
             <div className="flex ">
-              <div className=" bg-red-600  px-10">
+              <div className=" bg-gray-800  px-10 rounded-2xl">
                 <div className="text-5xl text-white py-10">
-                  <h1>Our Mission</h1>
+                  <h1 className="font-mono">Our Mission</h1>
                 </div>
                 <div className="py-5  text-white w-full">
                   <ul className="text-left">
@@ -218,11 +218,11 @@ export default function About() {
               </div>
 
               <div className=" py-5  relative">
-                <div className=" px-20  ">
-                  <div className="text-6xl py-5  text-black">
-                    <h1>Our Vision</h1>
+                <div className=" px-20 ">
+                  <div className="text-6xl py-5  text-gray-900">
+                    <h1 className="font-mono">Our Vision</h1>
                   </div>
-                  <div className="py-10  text-black">
+                  <div className="py-10  text-gray-900">
                     <ul className=" text-left ">
                       <li className="list-disc">
                         In this Era of highly endured information with paced up
@@ -260,8 +260,125 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="text-6xl flex justify-center text-red-500">
+        <div className="text-6xl flex justify-center text-gray-900">
           <h3>------</h3>
+        </div>
+        <br />
+      </section>
+      <section>
+        <div className="bg-gray-800">
+          <div className=" text-center px-20 py-20">
+            <h4 className="text-white">WHY CHOOSE US</h4>
+            <h1 className="text-4xl text-white py-5">What Sets Us Apart</h1>
+
+            <div className="px-10 py-5">
+              <div className="container ">
+                <div className="flex">
+                  <div className="  w-1/3 px-5 py-5 border border-gray-500 ">
+                    <div className="text-left">
+                      <i className="fa-solid fa-clock text-red-600 text-2xl "></i>
+                    </div>
+                    <FaCar className="text-red-600 text-3xl" />
+                    <h1 className="text-2xl text-white font-bold text-justify">
+                      Perfection Anytime
+                    </h1>
+                    <p className="py-1 text-justify text-white text-sm">
+                      It is about setting high standards for oneself and
+                      embracing the journey of growth, rather than fixating on
+                      end result it can lead to personal and professional
+                      development, increased confidence, and a sense of
+                      fulfillment.
+                    </p>
+                  </div>
+                  <div className="  w-1/3 px-5 py-5 border border-gray-500 ">
+                    <div className="text-left">
+                      <i className="fa-solid fa-comments text-red-600 text-2xl "></i>
+                    </div>
+                    <FaCar className="text-red-600 text-3xl" />
+                    <h1 className="text-2xl text-white font-bold text-justify">
+                      Tailored Solutions
+                    </h1>
+                    <p className="py-1 text-sm text-justify text-white">
+                      We believe in a personalized approach to every project. By
+                      understanding your business objectives and target
+                      audience, we develop custom strategies that align with
+                      your vision and objectives.
+                    </p>
+                  </div>
+                  <div className="  w-1/3 px-5 py-5 border border-gray-500 ">
+                    <div className="text-left">
+                      <i className="fa-solid fa-car text-red-600 text-2xl"></i>
+                    </div>
+                    <FaCar className="text-red-600 text-3xl" />
+                    <h1 className="text-2xl text-white font-bold text-justify">
+                      Creativity
+                    </h1>
+                    <p className="py-1 text-justify text-sm text-white">
+                      Creativity is at the heart of everything we do. Whether
+                      it's designing a stunning website, crafting engaging
+                      content, or conceptualizing captivating visuals, we infuse
+                      creativity into every aspect of our work to make your
+                      brand stand out.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="container ">
+                <div className="flex">
+                  <div className="  w-1/3 px-5 py-5 border border-gray-500 ">
+                    <div className="text-left">
+                      <i className="fa-solid fa-fire-extinguisher text-red-600 text-2xl"></i>
+                    </div>
+                    <FaCar className="text-red-600 text-3xl" />
+                    <h1 className="text-2xl text-white font-bold text-justify">
+                      Client-Centric Approach
+                    </h1>
+                    <p className="py-1 mb-3 text-justify text-white text-sm">
+                      we prioritize the needs and goals of our clients above all
+                      else. We believe in building long-lasting relationships
+                      based on trust, respect, and mutual success. Our dedicated
+                      team takes the time to listen to your concerns, understand
+                      your challenges, and tailor solutions that address your
+                      specific requirements. Your satisfaction is our top
+                      priority, and we're committed to delivering results that
+                      exceed your expectations.
+                    </p>
+                  </div>
+                  <div className="  w-1/3 px-5 py-5 border border-gray-500 ">
+                    <div className="text-left">
+                      <i className="fa-solid fa-laptop-house text-red-600 text-2xl"></i>
+                    </div>
+                    <FaCar className="text-red-600 text-3xl" />
+                    <h1 className="text-2xl text-white font-bold text-justify">
+                      Creativity
+                    </h1>
+                    <p className="py-1 mb-3 text-justify text-white text-sm">
+                      Creativity is at the heart of everything we do. Whether
+                      it's designing a stunning website, crafting engaging
+                      content, or conceptualizing captivating visuals, we infuse
+                      creativity into every aspect of our work to make your
+                      brand stand out.
+                    </p>
+                  </div>
+                  <div className="  w-1/3 px-5 py-5 border border-gray-500 ">
+                    <div className="text-left">
+                      <i className="fa-solid fa-user-tie text-red-600 text-2xl"></i>
+                    </div>
+                    <FaCar className="text-red-600 text-3xl" />
+                    <h1 className="text-2xl text-white font-bold text-justify">
+                      Transparency
+                    </h1>
+                    <p className="py-1 mb-3 text-justify text-white text-sm">
+                      We believe in open communication and transparency
+                      throughout the entire process. From project kickoff to
+                      delivery, you'll be kept informed every step of the way,
+                      ensuring a smooth and collaborative experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section>
@@ -270,30 +387,21 @@ export default function About() {
             <div className="px-10 row flex">
               <div className=" w-2/3 py-10">
                 <div className="text-5xl font-bold">
-                  <h1>SAFETY SOLUTIONS</h1>
+                  <h1> Perfection Anytime</h1>
                 </div>
                 <div className=" text-left py-5">
                   <p>
-                    Our safety solution is built with the latest technology and
-                    expertise to provide maximum protection for your
-                    organization. We begin by assessing your specific needs and
-                    vulnerabilities, including industry, location, and potential
-                    threats. Based on this assessment, we create a tailored
-                    safety solution that suits your organization's unique
-                    requirements. With our solution, you can rest assured that
-                    you have the best protection and peace of mind. Trust us to
-                    provide you with an expensive but invaluable safety solution
-                    that meets your needs and exceeds your expectations.
+                    It is about setting high standards for oneself and embracing
+                    the journey of growth, rather than fixating on end result it
+                    can lead to personal and professional development, increased
+                    confidence, and a sense of fulfillment.
                   </p>
                 </div>
               </div>
               <div className="w-1/2 px-10 ">
                 <div className="">
                   <a href="/about">
-                    <img
-                      className="max-w-xl rounded-3xl shadow-2xl"
-                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
-                    ></img>
+                    <img className=" rounded-3xl shadow-2xl" src={about}></img>
                   </a>
                 </div>
               </div>
@@ -309,28 +417,81 @@ export default function About() {
                 <div className="">
                   <a href="/about">
                     <img
-                      className="max-w-xl rounded-3xl shadow-2xl"
-                      src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
+                      className="h-96 rounded-3xl shadow-2xl"
+                      src={about}
                     ></img>
                   </a>
                 </div>
               </div>
               <div className=" w-2/3 px-10 py-5">
                 <div className="text-5xl font-bold">
-                  <h1>SAFETY SERVICES EQUIPMENT</h1>
+                  <h1>Tailored Solutions</h1>
                 </div>
                 <div className=" text-left py-5">
                   <p>
-                    Safety equipment and services are crucial for ensuring the
-                    safety and well-being of people and the environment. This
-                    includes personal protective equipment, fire safety
-                    equipment, safety signs, training, and emergency response
-                    services. PPE protects workers from potential hazards, while
-                    fire safety equipment helps prevent or mitigate fire
-                    hazards. These products and services are designed to meet
-                    industry standards and regulations to provide adequate
-                    protection. It's important to prioritize safety in all
-                    aspects of life to minimize risks and prevent accidents.
+                    We believe in a personalized approach to every project. By
+                    understanding your business objectives and target audience,
+                    we develop custom strategies that align with your vision and
+                    objectives.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className=" px-20 py-10">
+          <div className="container">
+            <div className="px-10 row flex">
+              <div className=" w-2/3 py-10">
+                <div className="text-5xl font-bold">
+                  <h1> Perfection Anytime</h1>
+                </div>
+                <div className=" text-left py-5">
+                  <p>
+                    It is about setting high standards for oneself and embracing
+                    the journey of growth, rather than fixating on end result it
+                    can lead to personal and professional development, increased
+                    confidence, and a sense of fulfillment.
+                  </p>
+                </div>
+              </div>
+              <div className="w-1/2 px-10 ">
+                <div className="">
+                  <a href="/about">
+                    <img className=" rounded-3xl shadow-2xl" src={about}></img>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className=" px-20 py-20">
+          <div className="container">
+            <div className=" row flex">
+              <div className=" ">
+                <div className="">
+                  <a href="/about">
+                    <img
+                      className="h-96 rounded-3xl shadow-2xl"
+                      src={about}
+                    ></img>
+                  </a>
+                </div>
+              </div>
+              <div className=" w-2/3 px-10 py-5">
+                <div className="text-5xl font-bold">
+                  <h1>Tailored Solutions</h1>
+                </div>
+                <div className=" text-left py-5">
+                  <p>
+                    We believe in a personalized approach to every project. By
+                    understanding your business objectives and target audience,
+                    we develop custom strategies that align with your vision and
+                    objectives.
                   </p>
                 </div>
               </div>

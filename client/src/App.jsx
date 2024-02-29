@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Services from "./pages/services";
 import Products from "./pages/products";
-import ProductsApplication from "./pages/ProductsApplication";
+import Blogs from "./pages/Blogs";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 
@@ -14,12 +14,7 @@ import FireHydrant from "./pages/Productsitems/FireHydrant";
 import SprinklerSystem from "./pages/Productsitems/SprinklerSystem";
 import IndustrialFireSafety from "./pages/Productsitems/IndustrialFireSafety";
 import ElectricalFireSafety from "./pages/Productsitems/ElectricalFireSafety";
-import App1 from "./pages/ProductsApplication/app1";
-import App2 from "./pages/ProductsApplication/App2";
-import App3 from "./pages/ProductsApplication/App3";
-import App4 from "./pages/ProductsApplication/App4";
-import App5 from "./pages/ProductsApplication/app5";
-import App6 from "./pages/ProductsApplication/App6";
+
 import { DropdownItem } from "flowbite-react";
 
 export default function App() {
@@ -42,14 +37,8 @@ export default function App() {
           path="/ElectricalFireSafety"
           element={<ElectricalFireSafety />}
         />
-        <Route path="/productsapplication" element={<ProductsApplication />} />
-        <Route path="/app1" element={<App1 />} />
-        <Route path="/app2" element={<App2 />} />
-        <Route path="/app3" element={<App3 />} />
-        <Route path="/app4" element={<App4 />} />
-        <Route path="/app5" element={<App5 />} />
-        <Route path="/app6" element={<App6 />} />
-        <Route path="/productsapplication" element={<ProductsApplication />} />
+        <Route path="/blogs" element={<Blogs />} />
+
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

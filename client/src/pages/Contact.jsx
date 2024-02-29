@@ -200,16 +200,14 @@ export default function Contact() {
                 <span>Email</span>
               </h6>
 
-              <p className="elementor-icon-box-description">
-                monolithsafetyexperts@gmail.com
-              </p>
+              <p className="elementor-icon-box-description">demo@gmail.com</p>
             </div>
           </div>
           <div className="">
             <i aria-hidden="true" className="fas fa-envelope text-red-500"></i>
             <div className="elementor-icon-box-content">
               <h6 className="elementor-icon-box-title font-semibold">
-                <span>Connect with MONOLITH</span>
+                <span>Connect with US</span>
               </h6>
               <div className="flex space-x-5 text-2xl">
                 <FaFacebookF className="text-blue-800" />

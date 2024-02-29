@@ -9,17 +9,15 @@ import {
   NavbarToggle,
 } from "flowbite-react";
 import logo from "./logo.png";
+import { IoLogoReact } from "react-icons/io5";
 
 export default function Header() {
   return (
     <Navbar className="bg-black h-36 flex justify-between items-center">
       <div className="flex items-center">
         <NavbarBrand>
-          <img
-            src={logo}
-            className="h-36 w-64 pl-2 pt-2"
-            alt="Flowbite React Logo"
-          />
+          {/* <img src="" className="h-36 w-64 pl-2 pt-2" alt=" Logo" /> */}
+          <IoLogoReact className="text-white h-16 w-20" />
         </NavbarBrand>
       </div>
 
@@ -53,19 +51,14 @@ export default function Header() {
               Electrical Fire Safety Panels
             </DropdownItem>
           </Dropdown>
-          <Dropdown
-            label=<a href="/productsapplication">Products application</a>
-            style={{ border: "none" }}
-          >
+          <Dropdown label=<a href="/blogs">Blogs</a> style={{ border: "none" }}>
             {/* Dropdown items */}
-            <DropdownItem href="/app1">Power Plants</DropdownItem>
-            <DropdownItem href="/app2">Building & Construction</DropdownItem>
-            <DropdownItem href="/app3">Restaurants & Server Room</DropdownItem>
-            <DropdownItem href="/app4">
-              Hangars, Dockyards & Airport
-            </DropdownItem>
-            <DropdownItem href="/app5">Residential Areas</DropdownItem>
-            <DropdownItem href="/app6">Oil Refineries</DropdownItem>
+            <DropdownItem href="/app1">category1</DropdownItem>
+            <DropdownItem href="/app2">category2</DropdownItem>
+            <DropdownItem href="/app3">category3</DropdownItem>
+            <DropdownItem href="/app4">category4</DropdownItem>
+            <DropdownItem href="/app5">category5</DropdownItem>
+            <DropdownItem href="/app6">category6</DropdownItem>
           </Dropdown>
         </div>
         <NavbarLink href="/about" active>

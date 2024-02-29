@@ -2,14 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaCar } from "react-icons/fa";
 import { CardList } from "../Card";
+import about from "./images/about.jpg";
 export default function Products() {
   return (
     <div>
       <section>
         <div className="relative">
           <img
-            className="w-full h-96 shadow-2xl"
-            src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
+            className="w-full
+           h-96 shadow-2xl"
+            src={about}
             alt="Product"
           />
           <div className="absolute top-1/2 left-1/2 text-center transform -translate-x-1/2 -translate-y-1/3">
@@ -19,7 +21,7 @@ export default function Products() {
 
             <Link
               to="/"
-              className="inline-block  text-black border border-red-600 border-2  hover:bg-red-600 px-7 py-2 "
+              className="inline-block  text-black border border-gray-800 border-2 hover:text-white hover:bg-gray-800 px-7 py-2 "
             >
               Back to Home
             </Link>
@@ -30,7 +32,7 @@ export default function Products() {
         <div className="flex py-20 px-20 bg-gray-100">
           {/* Card 1 */}
 
-          <div className="bg-white mx-2 flex-1 shadow-2xl rounded-2xl hover:bg-gray-200">
+          <div className="bg-white mx-2 flex-1 shadow-2xl rounded-2xl hover:bg-gray-200 hover:scale-110 duration-150">
             <div className="px-2 py-3 ">
               <FaCar className="text-red-600 text-4xl" />
               <div className="font-bold text-2xl mb-2">Quality Assurance</div>
@@ -42,7 +44,7 @@ export default function Products() {
             </div>
           </div>
           {/* Card 2 */}
-          <div className="bg-white mx-2 flex-1 shadow-2xl rounded-2xl hover:bg-gray-200">
+          <div className="bg-white mx-2 flex-1 shadow-2xl rounded-2xl hover:bg-gray-200 hover:scale-110 duration-150">
             <div className="px-6 py-4 ">
               <FaCar className="text-red-600 text-4xl" />
               <div className="font-bold text-2xl mb-2">Durability</div>
@@ -54,7 +56,7 @@ export default function Products() {
             </div>
           </div>
           {/* Card 3 */}
-          <div className="bg-white mx-2 flex-1 shadow-2xl rounded-2xl hover:bg-gray-200">
+          <div className="bg-white mx-2 flex-1 shadow-2xl rounded-2xl hover:bg-gray-200 hover:scale-110 duration-150">
             <div className="px-6 py-4">
               <FaCar className="text-red-600 text-4xl" />
               <div className="font-bold text-2xl mb-2">ISI Approved</div>
@@ -67,7 +69,7 @@ export default function Products() {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-white mx-2 flex-1 shadow-2xl rounded-2xl hover:bg-gray-200">
+          <div className="bg-white mx-2 flex-1 shadow-2xl rounded-2xl hover:bg-gray-200 hover:scale-110 duration-150">
             <div className="px-6 py-4">
               <FaCar className="text-red-600 text-4xl" />
               <div className="font-bold text-2xl mb-2">Customization</div>
@@ -84,9 +86,9 @@ export default function Products() {
         <div className="flex md:flex-row items-center p-24">
           <div>
             <img
-              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
+              src={about}
               alt="fire Brigade"
-              className="rounded-3xl mr-44"
+              className="rounded-3xl mr-44 h-72"
             />
           </div>
           <div className="max-w-lg ">
@@ -120,7 +122,7 @@ export default function Products() {
           </div>
           <div>
             <img
-              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
+              src={about}
               alt="fire Brigade"
               className="rounded-3xl ml-24 h-80 "
             />
@@ -130,11 +132,7 @@ export default function Products() {
       <section>
         <div className="flex flex-col md:flex-row items-center px-44 py-24">
           <div>
-            <img
-              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
-              alt="fire Brigade"
-              className="rounded-3xl h-80 "
-            />
+            <img src={about} alt="fire Brigade" className="rounded-3xl h-80 " />
           </div>
           <div className="max-w-lg ml-14">
             <h1 className="text-4xl font-serif">SPRINKLE SYSTEM</h1>
@@ -167,7 +165,7 @@ export default function Products() {
           </div>
           <div>
             <img
-              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
+              src={about}
               alt="fire Brigade"
               className="rounded-3xl ml-20  h-80     "
             />
@@ -178,7 +176,7 @@ export default function Products() {
         <div className="flex flex-col md:flex-row items-center px-44 py-24">
           <div>
             <img
-              src="https://imgs.search.brave.com/-1uUuGEoE3q_S0siodb1c03LB2Pt28aQK_HUPTVQzhc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODk3ODk2OTIyNDgt/MTVhZmJmMmRjZGEx/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OFpt/bHlaU1V5TUcxaGJu/eGxibnd3Zkh3d2ZI/eDhNQT09"
+              src={about}
               alt="fire Brigade"
               className="rounded-3xl mr-44 w-96 h-80 "
             />
@@ -199,12 +197,7 @@ export default function Products() {
         </div>
       </section>
       <section className="p-10">
-        <h1 className="text-6xl text-center">All Products</h1>
-        <CardList />
-        <CardList />
-        <CardList />
-        <CardList />
-        <CardList />
+        <h1 className="text-6xl text-center font-mono">All Products</h1>
         <CardList />
         <CardList />
         <CardList />
