@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Services from "./pages/services";
-import Products from "./pages/products";
+import Services from "./pages/Services";
+import Products from "./pages/Products";
 import Blogs from "./pages/Blogs";
-import About from "./pages/about";
-import Contact from "./pages/contact";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
-import Header from "./components/Header";
+import Header from "./components/Headereader";
 import Footer from "./components/Footer";
 import FireExtinguishers from "./pages/Productsitems/FireExtinguishers";
 import FireHydrant from "./pages/Productsitems/FireHydrant";
