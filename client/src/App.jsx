@@ -7,7 +7,7 @@ import Blogs from "./pages/Blogs";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
-import Header from "./components/Headereader";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import FireExtinguishers from "./pages/Productsitems/FireExtinguishers";
 import FireHydrant from "./pages/Productsitems/FireHydrant";
